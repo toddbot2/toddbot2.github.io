@@ -26,7 +26,10 @@ img{
 
 .expand-web{
 	height:100px;
-	display: inline;
+	float: left;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 40px;
 }
 
 
