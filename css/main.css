@@ -1,0 +1,30 @@
+
+
+#goat{
+	height: 700px;
+}
+
+
+
+
+#cboxOverlay{
+	height:100%;
+	width: 100%;
+	background: black;
+	position: fixed;
+	top:0;
+	left: 0;
+	}
+
+img, a{
+	height: 0;
+	-moz-transition: height .5s;
+	-webkit-transition: height .5s;
+	transition: height .5s;
+}
+.expand {
+	height: 200px;
+	-moz-transition: height .4s;
+	-webkit-transition: height .4s;
+	transition: height .4s;
+}	
