@@ -28,7 +28,7 @@
 		        <a class="gallery" href="pics/Wing.jpg"><img src="pics/Wing.jpg"></a>
 		       </div>
 		       <h1 class="click2">Websites</h1>
-		       	<div class="webstuff"><a href="http://www.recycledcycles.com"><img src="pics/Color-logo-4.png"></a></div>
+		       	<div class="webstuff"><a href="http://www.recycledcycles.com"><img id="RC" src="pics/Color-logo-4.png"></a></div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -37,8 +37,8 @@
         <script type="text/javascript" src="jquery.colorbox.js"></script>
         <script> 
        		$(document).ready(function () {
+       			$('a.gallery').colorbox({html: "gallery", rel:"gal", opacity: .7});
             $('.click').click(function(){
-            	$('a.gallery').colorbox({rel:"gal", opacity: .7});
 								console.log('hello friend');
 								var slide = $('.gallery').children('img', this);
 								console.log('thanks');
