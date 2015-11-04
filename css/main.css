@@ -11,7 +11,7 @@ body{
 	left: 0;
 	}
 
-img {
+img{
 	height: 0;
 	-moz-transition: height .5s;
 	-webkit-transition: height .5s;
@@ -24,6 +24,10 @@ img {
 	transition: height .4s;
 }	
 
+.expand-web{
+	height:100px;
+	display: inline;
+}
 
 
 
