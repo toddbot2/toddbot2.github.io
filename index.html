@@ -18,30 +18,33 @@
         <p>Todd Durboraw</p>
         	<h1 class="click">Illustration</h1>
 	        <div class="region1">	
-		        <a class="gallery" href="pics/Butt-city color(cleaned-enlarged).jpg"><img src="pics/Butt-city color(cleaned-enlarged).jpg" ></a>
-		        <a class="gallery" href="pics/Skull.jpg"><img src="pics/Skull.jpg"></a>
-		        <a class="gallery" id="goat" href="pics/Dotted Goat.jpg"><img src="pics/Dotted Goat.jpg"></a>
-		        <a class="gallery" href="pics/Mixi 1.jpg"><img src="pics/Mixi 1.jpg"></a>
-		        <a class="gallery" href="pics/Mixi 2.jpg"><img src="pics/Mixi 2.jpg"></a>
-		        <a class="gallery" href="pics/mixi 3.jpg"><img src="pics/mixi 3.jpg"></a>
-		        <a class="gallery" href="pics/Orchid.jpg"><img src="pics/Orchid.jpg"></a>
-		        <a class="gallery" href="pics/Wing.jpg"><img src="pics/Wing.jpg"></a>
-		        <a class="gallery" href="pics/Squirrel-Skull.jpg"><img src="pics/Squirrel-Skull.jpg"></a>
-		        <a class="gallery" href="pics/Squirrel.jpg"><img src="pics/Squirrel.jpg"></a>
-		        <a class="gallery" href="pics/tomato.jpg"><img src="pics/tomato.jpg"></a>
+			        <a class="gallery" href="pics/Butt-city color(cleaned-enlarged).jpg"><img src="pics/Butt-city color(cleaned-enlarged).jpg" ></a>
+			        <a class="gallery" href="pics/Skull.jpg"><img src="pics/Skull.jpg"></a>
+			        <a class="gallery" id="goat" href="pics/Dotted Goat.jpg"><img src="pics/Dotted Goat.jpg"></a>
+			        <a class="gallery" href="pics/Mixi 1.jpg"><img src="pics/Mixi 1.jpg"></a>
+			        <a class="gallery" href="pics/Mixi 2.jpg"><img src="pics/Mixi 2.jpg"></a>
+			        <a class="gallery" href="pics/mixi 3.jpg"><img src="pics/mixi 3.jpg"></a>
+			        <a class="gallery" href="pics/Orchid.jpg"><img src="pics/Orchid.jpg"></a>
+			        <a class="gallery" href="pics/Wing.jpg"><img src="pics/Wing.jpg"></a>
+			        <a class="gallery" href="pics/Squirrel-Skull.jpg"><img src="pics/Squirrel-Skull.jpg"></a>
+			        <a class="gallery" href="pics/Squirrel.jpg"><img src="pics/Squirrel.jpg"></a>
+			        <a class="gallery" href="pics/tomato.jpg"><img src="pics/tomato.jpg"></a>
 		       </div>
 		       <h1 class="click2">Photography</h1>
 		       	<div class="region2">
-		       	<a class="photos" href="photos/boyds.jpg"><img src="photos/boyds.jpg" ></a>
-		       	<a class="photos" href="photos/boyd-2.jpg"><img src="photos/boyd-2.jpg" ></a>
-		       	<a class="photos" href="photos/hubs.jpg"><img src="photos/hubs.jpg" ></a>
-		       	<a class="photos" href="photos/plants.jpg"><img src="photos/plants.jpg" ></a>
-		       	<a class="photos" href="photos/race.jpg"><img src="photos/race.jpg" ></a>
-		       	<a class="photos" href="photos/dude.jpg"><img src="photos/dude.jpg" ></a>
+			       	<a class="photos" href="photos/boyds.jpg"><img src="photos/boyds.jpg" ></a>
+			       	<a class="photos" href="photos/boyd-2.jpg"><img src="photos/boyd-2.jpg" ></a>
+			       	<a class="photos" href="photos/hubs.jpg"><img src="photos/hubs.jpg" ></a>
+			       	<a class="photos" href="photos/plants.jpg"><img src="photos/plants.jpg" ></a>
+			       	<a class="photos" href="photos/race.jpg"><img src="photos/race.jpg" ></a>
+			       	<a class="photos" href="photos/dude.jpg"><img src="photos/dude.jpg" ></a>
+			       	<a class="photos" href="photos/lefty.jpg"><img src="photos/lefty.jpg" ></a>
 		       	</div>
 		       <h1 class="click3">Websites</h1>
-		       	<div class="webstuff"><a href="http://www.recycledcycles.com"><img src="pics/Color-logo-4.png"></a></div>
-		       	<div class="webstuff"><a href="http://delridgegrocery.coop/"><img src="pics/delridge-grocery_logo01.png"></a></div>
+		       	<div class="region3">
+			       	<a class="webstuff" href="http://www.recycledcycles.com"><img src="pics/Color-logo-4.png"></a>
+			       	<a class="webstuff" href="http://delridgegrocery.coop/"><img src="pics/delridge-grocery_logo01.png"></a>
+			      </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -52,54 +55,44 @@
    		$(document).ready(function () {
 			$('a.gallery').colorbox({maxHeight:"80%", maxWidth: "90%", rel:"gallery", opacity: .7});
       $('.click').click(function(){
-				console.log('hello friend');
 				var slide = $('.gallery').children('img', this);
-				console.log('thanks');
-				if (slide.hasClass('expand')){
-					slide.removeClass('expand')
-					}
-				else{
-					slide.addClass('expand');
-					}
-				console.log('all done');
-
-
+					if (slide.hasClass('expand')){
+						slide.removeClass('expand')
+						}
+					else{
+						slide.addClass('expand');
+						}
         	});  
             
        
 
 				$('.click2').click(function(){
 					$('a.photos').colorbox({rel: "photos",maxHeight:"80%", maxWidth: "90%", opacity: .7});
-					console.log('hello friend');
 					var slide = $('.photos').children('img', this);
-					console.log('thanks');
-				if (slide.hasClass('expand')){
-					slide.removeClass('expand')
-					}
-				else{
-					slide.addClass('expand');
-					}
-				console.log('all done');
+						if (slide.hasClass('expand')){
+							slide.removeClass('expand')
+							}
+						else{
+							slide.addClass('expand');
+							}
 
  					});
 
 
 					$('.click3').click(function(){
-            	console.log('hello')
             	$('a.webstuff').colorbox({rel: "webstuff", inline: true});
-								var slide = $('.webstuff').children('a').children('img', this);
-								console.log('is this working?');
-								if (slide.hasClass('expand-web')){
-									slide.removeClass('expand-web');
-								}
-								else{
-									slide.addClass('expand-web');
-								}
-								console.log('all done');
+            	console.log("hello");
+								var slide = $('.webstuff').children('img', this);
+									if (slide.hasClass('expand-web')){
+										console.log("is this working?");
+										slide.removeClass('expand-web');
+										console.log("removed?");
+										}
+									else{
+										slide.addClass('expand-web');
+										console.log("done");
+									}
 							});
-							
-
-
         	});  		
         </script>
         <script src="main.js">
