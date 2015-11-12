@@ -35,7 +35,9 @@ img{
 	transition: height .4s;
 }
 
-
+.click, .click2, .click3{
+	font-family: 'Raleway', sans-serif;
+}
 .region3{
 	height:0;
 	
