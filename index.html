@@ -17,6 +17,9 @@
 
 
         <p>Todd Durboraw</p>
+        <div class="nav-list">
+        	<p><a href="todddurboraw.com">home</a>/<a href="todddurboraw.com/illustrations">illustrations</a>/<a href="todddurboraw.com/photography">photography</a>/<a href="todddurboraw.com/websites">websites</a>/<a href="todddurboraw.com/bikes">bikes</a></p>
+        </div>
         	<h1 class="click">Illustration</h1>
 	        <div class="region1">	
 			        <a class="gallery" href="pics/Butt-city color(cleaned-enlarged).jpg"><img src="pics/Butt-city color(cleaned-enlarged).jpg" ></a>
@@ -46,16 +49,21 @@
 			       	<a class="webstuff" href="http://www.recycledcycles.com"><img src="pics/Color-logo-4.png"></a>
 			       	<a class="webstuff" href="http://delridgegrocery.coop/"><img src="pics/delridge-grocery_logo01.png"></a>
 			      </div>
+			      <div class="julia">
+			      	<a href="juliaswebsite.com">
+			      	CLICK HERE FOR JULIA'S STUFF</a>
+			      </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="jquery.colorbox.js"></script>
         <script> 
    		$(document).ready(function () {
-			$('a.gallery').colorbox({maxHeight:"80%", maxWidth: "90%", rel:"gallery", opacity: .7});
-      $('.click').click(function(){
+			$('a.gallery', 'a.photos', 'a.').colorbox({maxHeight:"80%", maxWidth: "90%", rel:"gallery", opacity: .7});
+  		$('.click').click(function(){
 				var slide = $('.gallery').children('img', this);
 					if (slide.hasClass('expand')){
 						slide.removeClass('expand')
@@ -67,8 +75,8 @@
             
        
 
-				$('.click2').click(function(){
-					$('a.photos').colorbox({rel: "photos",maxHeight:"99%", maxWidth: "99%", opacity: .7});
+			$('.click2').click(function(){
+				$('a.photos').colorbox({rel: "photos",maxHeight:"99%", maxWidth: "99%", opacity: .7});
 					var slide = $('.photos').children('img', this);
 						if (slide.hasClass('expand')){
 							slide.removeClass('expand')
@@ -94,8 +102,10 @@
 										console.log("done");
 									}
 							});
-        	});  		
+
+      				});
+      		
         </script>
-        <script src="main.js">
+        <script src="main.js"></script>
     </body>
 </html>
