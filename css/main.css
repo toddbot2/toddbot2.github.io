@@ -31,11 +31,11 @@ img{
 .click, .click2, .click3{
 	height: 200px;
 	width: 200px;
-	border-radius: 100px;
-	background: grey;
+	/*border-radius: 100px;*/
+	/*background: grey;*/
 	text-align: center;
 	line-height: 6em;
-	border: solid white 1px;
+	/*border: solid white 1px;*/
 	-webkit-transition: background: .5s;
 	transition: background .5s;
 	display: inline-block;
