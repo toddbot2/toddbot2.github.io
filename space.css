@@ -1,0 +1,341 @@
+
+html{
+	overflow: hidden;
+
+}
+ul{
+	list-style: none;
+}
+
+body{
+	font-family: "futura";
+	font-weight: bold;
+}
+.body{
+	border-radius: 100%;
+	border: 1px solid white;
+	position: relative;
+	margin: auto;
+}
+.universe{
+	background-color: #2c3e50;
+}
+
+.info{
+	float: right;
+	text-align: center;
+	padding-right: 30px;
+	font-size: 25px;
+	position: relative;
+	top: 150px;
+	-webkit-transform: scale(.96);
+    transform: scale(.96);
+    z-index: 1;
+}
+
+
+
+.info li{
+	padding:7px 0;
+}
+
+.info a{
+	text-decoration: none;
+	color: white;
+}
+
+.info a:hover{
+	/*color: #f1c40f;*/
+	-webkit-text-stroke-width: .5px;
+	text-stroke-width:.5px;
+   -webkit-text-stroke-color: #f1c40f;
+   text-stroke-color:#f1c40f;
+}
+
+.title + {
+	color: pink;
+}
+.solar_system, .info{
+ 	 -webkit-transform: scale(.96);
+    transform: scale(.96);
+}
+
+/*.planet{
+	height: 10px;
+	width: 10px;
+}*/
+
+.planet{
+	height: 10px;
+	width:10px;
+	background: red;
+	display: block;
+	border-radius: 100%;
+	text-indent: -9999px;
+}
+
+.body a span{
+	position: absolute;
+}
+
+.title{
+	position: absolute;
+	right: 16%;
+	color: white;
+	font-size: 4em;
+	-webkit-text-stroke-width: .5px;
+	text-stroke-width:.5px;
+   -webkit-text-stroke-color: #f1c40f;
+   text-stroke-color:#f1c40f;
+}
+
+.sun{
+	height:40px;
+	width: 40px;
+	background-color: yellow;
+	border-radius: 100%;
+	position: relative;
+	margin: auto;
+	top: 320px;
+	text-indent: -9999px;
+	z-index: 1;
+	transition: .2s;
+}
+
+.sun:hover{
+	 transform: scale(1.5);
+}
+
+.mercury{
+	height: 100px;
+	width: 100px;
+	top: 250px;
+	-webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+    
+    
+}
+@-moz-keyframes spin { 
+	100% { -moz-transform: rotate(360deg); 
+		} 
+	}
+@-webkit-keyframes spin { 
+	100% { -webkit-transform: rotate(360deg); 
+		} 
+	}
+
+
+.mercury span{
+    position: absolute;
+    background-color: #e74c3c;
+    top: 24px;
+
+}
+
+.venus{
+	height: 160px;
+	width: 160px;
+	top: 120px;
+	animation:spin 2.44s linear infinite;
+	@keyframes spin { 
+		100% { 
+		-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.venus span{
+	top:-6px;
+	left:72px;
+	background-color: #95a5a6;
+}
+
+
+.earth{
+	height:220px;
+	width: 220px;
+    bottom: 70px;
+    animation:spin 4s linear infinite;
+	@keyframes spin { 
+		100% { 
+	-webkit-transform: rotate(360deg); 
+	transform:rotate(360deg); }}
+}
+
+.earth span{
+	top: -6px;
+	left:102px;
+	background-color: #3498db;
+}
+
+#moon{
+	height:5px;
+	position:absolute;
+	width:5px;
+	top: 12px;
+	left: -4px;
+	background-color: #95a5a6;
+	border-radius: 100%; 
+}
+
+#callisto{
+	top: 10px;
+    left: 29px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
+
+#ganymede{
+	top: 10px;
+    left: -9px;
+    height: 5px;
+    width: 5px;
+    background-color: #F2784B;
+}
+
+#europa{
+	top: 22px;
+    left: -4px;
+    height: 5px;
+    width: 5px;
+}
+
+#io{
+	top: -6px;
+    left: 7px;
+    height: 5px;
+    width: 5px;
+
+}
+
+.jupiter span{
+	animation:spin 6s linear infinite;
+	@keyframes spin { 
+		100% { 
+	-webkit-transform: rotate(360deg); 
+	transform:rotate(360deg); }}
+}
+
+.earth span{
+	animation:spin 1s linear infinite;
+	@keyframes spin { 
+		100% { 
+	-webkit-transform: rotate(360deg); 
+	transform:rotate(360deg); }}
+}
+
+
+
+.mars{
+	height: 280px;
+	width: 280px;
+    bottom: 322px;
+    animation:spin 7.52s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.mars span{
+
+	top: -6px;
+	left: 121px;
+	background-color: #c0392b;
+}
+
+.jupiter{
+	height: 340px;
+	width: 340px;
+   	bottom: 632px;
+   	animation:spin 19.2s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.jupiter span{
+	top: -12px;
+	left: 150px;
+	height:25px;
+	width: 25px;
+	background-color: #FDE3A7;
+}
+
+.saturn{
+	height: 400px;
+	width: 400px;
+    bottom: 1002px;
+    animation:spin 58s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.saturn span{
+	top: -5px;
+	left: 180px;
+	height: 15px;
+	width: 15px;
+	background-color:#EB974E;
+}
+#rings{
+	height: 25px;
+	width:3px;
+	background-color: black;
+	top: -6px;
+	left: 6px;
+	border-radius: 50px;
+	background-color: #E4F1FE
+
+}
+
+.uranus{
+	height:460px;
+	width: 460px;
+	bottom: 1433px;
+	animation:spin 84s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.uranus span{
+	top:-5px;
+	left:210px;
+	background-color: brown;
+}
+
+.neptune{
+	height: 520px;
+    width: 520px;
+    bottom: 1925px;
+    animation:spin 165s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.neptune span{
+	top: -5px;
+	left: 240px;
+	background-color: #1F3A93;
+}
+
+.pluto{
+	height: 580px;
+    width: 580px;
+    bottom: 2477px;
+    animation:spin 380s linear infinite;
+	@keyframes spin { 100% { 
+	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+}
+
+.pluto span{
+	top:-3px;
+	left:270px;
+	height: 5px;
+	width: 5px;
+	background-color: orange;
+}
+
+@media (max-width: 850px){
+	.universe{
+		tran
+	}
+	
+}

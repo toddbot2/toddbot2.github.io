@@ -1,108 +1,453 @@
-<!doctype html>
-<html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
-    </head>
-    <body>
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Todd's World!</title>
+	<meta name="description" content=".">
+	<meta name="author" content="">
+	
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- CSS Files
+	* cssreset-min.css 			- CSS reset
+	* typegrid.css				- Responsive grid system
+	* style.css					- Main CSS file
+	
+	Original LESS Stylesheet
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	================================================== -->
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.0/build/cssreset/cssreset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/typegrid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="dist/css/lightbox.min.css">
 
 
-        <p>Todd Durboraw</p>
-        <!-- <div class="nav-list">
-        	<p><a href="todddurboraw.com">home</a>/<a href="todddurboraw.com/illustrations">illustrations</a>/<a href="todddurboraw.com/photography">photography</a>/<a href="todddurboraw.com/websites">websites</a>/<a href="todddurboraw.com/bikes">bikes</a></p>
-        </div> -->
-        	<h1 class="click">Illustration</h1>
-	        <div class="region1">	
-			        <a class="gallery" href="pics/Butt-city color(cleaned-enlarged).jpg"><img src="pics/Butt-city color(cleaned-enlarged).jpg" ></a>
-			        <a class="gallery" href="pics/Skull (redone).jpg"><img src="pics/Skull (redone).jpg"></a>
-			        <a class="gallery" id="goat" href="pics/Dotted Goat (redone).jpg"><img src="pics/Dotted Goat (redone).jpg"></a>
-			        <a class="gallery" href="pics/Mixi 1.jpg"><img src="pics/Mixi 1.jpg"></a>
-			        <a class="gallery" href="pics/Mixi 2.jpg"><img src="pics/Mixi 2.jpg"></a>
-			        <a class="gallery" href="pics/mixi 3.jpg"><img src="pics/mixi 3.jpg"></a>
-			        <a class="gallery" href="pics/Orchid.jpg"><img src="pics/Orchid.jpg"></a>
-			        <a class="gallery" href="pics/Wing.jpg"><img src="pics/Wing.jpg"></a>
-			        <a class="gallery" href="pics/Squirrel-Skull.jpg"><img src="pics/Squirrel-Skull.jpg"></a>
-			        <a class="gallery" href="pics/Squirrel (redone).jpg"><img src="pics/Squirrel (redone).jpg"></a>
-			        <a class="gallery" href="pics/tomato.jpg"><img src="pics/tomato.jpg"></a>
-		       </div>
-		       <h1 class="click2">Photography</h1>
-		       	<div class="region2">
-			       	<a class="photos" href="photos/boyds.jpg"><img src="photos/boyds.jpg" ></a>
-			       	<a class="photos" href="photos/boyd-2.jpg"><img src="photos/boyd-2.jpg" ></a>
-			       	<a class="photos" href="photos/hubs.jpg"><img src="photos/hubs.jpg" ></a>
-			       	<a class="photos" href="photos/plants.jpg"><img src="photos/plants.jpg" ></a>
-			       	<a class="photos" href="photos/race.jpg"><img src="photos/race.jpg" ></a>
-			       	<a class="photos" href="photos/dude.jpg"><img src="photos/dude.jpg" ></a>
-			       	<a class="photos" href="photos/lefty.jpg"><img src="photos/lefty.jpg" ></a>
-		       	</div>
-		       <h1 class="click3">Websites</h1>
-		       	<div class="region3">
-			       	<a class="webstuff" href="http://www.recycledcycles.com"><img src="pics/Color-logo-4.png"></a>
-			       	<a class="webstuff" href="http://delridgegrocery.coop/"><img src="pics/delridge-grocery_logo01.png"></a>
-			      </div>
-		      <h1 class="julia"><a href="juliaswebsite.com">CLICK HERE FOR JULIA'S STUFF</h1></a>
+		
+	<!--[if lt IE 8]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+	<![endif]-->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-        
-        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="jquery.colorbox.js"></script>
-        <script> 
-   		$(document).ready(function () {
-			$('a.gallery', 'a.photos', 'a.').colorbox({maxHeight:"80%", maxWidth: "90%", rel:"gallery", opacity: .7});
-  		$('.click').click(function(){
-				var slide = $('.gallery').children('img', this);
-					if (slide.hasClass('expand')){
-						slide.removeClass('expand')
-						}
-					else{
-						slide.addClass('expand');
-						}
-        	});  
-            
-       
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 
-			$('.click2').click(function(){
-				$('a.photos').colorbox({rel: "photos",maxHeight:"99%", maxWidth: "99%", opacity: .7});
-					var slide = $('.photos').children('img', this);
-						if (slide.hasClass('expand')){
-							slide.removeClass('expand')
-							}
-						else{
-							slide.addClass('expand');
-							}
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
- 					});
+</head>
+
+<body>
 
 
-					$('.click3').click(function(){
-            	$('a.webstuff').colorbox({rel: "webstuff", inline: true});
-            	console.log("hello");
-								var slide = $('.webstuff').children('img', this);
-									if (slide.hasClass('expand-web')){
-										console.log("is this working?");
-										slide.removeClass('expand-web');
-										console.log("removed?");
-										}
-									else{
-										slide.addClass('expand-web');
-										console.log("done");
-									}
-							});
+	<!-- Header - Half Logo
+	================================================== -->
+	<section id="header">
 
-      				});
-      		
-        </script>
-        <script src="main.js"></script>
-    </body>
+		<!-- * * * * * * * * * * * * * * * * * * * * * * *
+
+			Top Bar & Menu (#nav)
+
+		* * * * * * * * * * * * * * * * * * * * * * * * -->
+		<!-- <div class="topbar">
+			<div class="container">
+					
+				
+					A custom jQuery plugin called typeMenu handles the menu
+					Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
+				
+				<ul id="nav" class="full">
+					<li>
+						<a href="about.html">
+							<span class="count hide-on-mobile">01.</span>
+							About
+						</a>
+						<ul>
+							<li><a href="index-with-iosslider.html">Home w/ Slider</a></li>
+							<li><a href="index-with-flexslider.html">Home w/ Slider 2</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="works-stackgrid-with-title.html">
+							<span class="count hide-on-mobile">02.</span>
+							Works
+						</a>
+						<ul>
+							<li><a href="works-stackgrid-images.html">Images Only</a></li>
+							<li><a href="works-architecture-three-columns.html">Architecture</a></li>
+							<li class="hide-on-mobile"><a href="works-architecture-two-columns.html">Two Columns</a></li>
+							<li>
+								<a href="single-photography-sidebar-right.html">Single</a>
+								<ul>
+									<li><a href="single-photography-full-width.html">Full Width</a></li>
+									<li><a href="single-photography-sidebar-left.html">Left Sidebar</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="shop.html">
+							<span class="count hide-on-mobile">03.</span>Shop
+						</a>
+						<ul>
+							<li><a href="shop-item.html">Single Item</a></li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="archive-blog.html">
+							<span class="count hide-on-mobile">04.</span>
+							Blog
+						</a>
+						<ul>
+							<li><a href="single-blog.html">Single Page</a></li>
+						</ul>
+					</li>
+					
+				</ul>// #nav 
+
+			</div> // .container 
+		</div> // .topbar  -->
+
+		<div class="logo-wrap">
+			<div class="container">
+				<div class="desktop-6 columns">
+					<h1 class="logo"><a href="index.html" title="Home"><img src="images/logo3.svg" alt="" /></a></h1>
+				</div><!-- // .desktop-6  -->
+
+				<div class="desktop-6 columns">
+					<p class="site-desc">
+						Todd Durboraw<br />
+						<span class="font-color-primary statement">I can do some stuff.</span>
+					</p> <!-- // .site-desc -->
+				</div><!-- // .desktop-6 --> 
+
+				<div class="clear"></div>
+			</div> <!-- // .container  -->
+		</div> <!-- // .logo-wrap --> 
+	</section><!-- // #header  -->
+
+
+	<!-- Works
+	================================================== -->
+	<section id="works">
+		<div class="container">
+			<div class="desktop-12 columns"><div class="border-top"></div></div>
+
+				<div class="desktop-12 mobile-full columns"><h1 class="title">Illustrations</h1></div>
+
+				<a href="images/art/Hanweir.jpg" data-lightbox="illustrations" data-title="The Hanewir Chronicle" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>The Hanweir Chronicle</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Hanweir.jpg" alt=""/>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/skull.jpg" class="permalink" data-lightbox="illustrations" data-title="Skulls">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Skulls</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/skull.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Wing.jpg" class="permalink" data-lightbox="illustrations" data-title="Bird's wing">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Wing</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Wing.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Dotted-Goat.jpg" class="permalink" data-lightbox="illustrations" data-title="Mountain goat">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item first-row">
+							<h3>Goat</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Dotted-Goat.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<div class="clear"></div>
+			
+				<a href="images/art/mixi3.jpg" class="permalink" data-lightbox="illustrations" data-title="Slime mold">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Mxyomyceti</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/mixi3.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Orchid.jpg" class="permalink" data-lightbox="illustrations" data-title="Oncidium bicolor">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Orchid</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Orchid.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Ethel_Reed.jpg" class="permalink" data-lightbox="illustrations" data-title="Ethel Reed">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Ethel Reed</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Ethel_Reed.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/butt-city.jpg" class="permalink" data-lightbox="illustrations" data-title="Greetings from Butt City">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Butt City</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/butt-city.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<div class="clear"></div>
+			
+				<a href="images/art/Alaska.jpg" class="permalink" data-lightbox="illustrations" data-title="Trophic ladder">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Trophic Ladder</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Alaska.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Pencil_Goat_Skull.jpg" class="permalink" data-lightbox="illustrations" data-title="Metal beets">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Satanic Beets</h3>
+							<span class="category">Digital Illustration</span>
+
+							<img src="images/art/Pencil_Goat_Skull.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/deer.jpg" class="permalink" data-lightbox="illustrations" data-title="Illustrator deer">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Deer</h3>
+							<span class="category">Digital Illustration</span>
+
+							<img src="images/art/deer.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<a href="images/art/Fancy_R.jpg" class="permalink" data-lightbox="illustrations" data-title="Majuscule">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Calligraphy</h3>
+							<span class="category">Illustration</span>
+
+							<img src="images/art/Fancy_R.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<div class="clear"></div>
+			
+				<a href="space.html" class="permalink">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Solar System</h3>
+							<span class="category">Digital</span>
+
+							<img src="images/art/solar.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/art/usaposter.jpg" class="permalink" data-lightbox="illustrations" data-title="Seattle Women's March 2017">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Women's March</h3>
+							<span class="category">Digital Illustration</span>
+
+							<img src="images/art/usaposter.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+				
+				<div class="desktop-12 mobile-full columns"><h1 class="title">Bikes</h1></div>
+
+				<a href="images/bikes/Colnago.jpg" class="permalink" data-lightbox="bikes" data-title="1981 Colnago Super ">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>1981 Colnago Super</h3>
+							<span class="category">Bikes</span>
+
+							<img src="images/bikes/Colnago.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/bikes/Banana_Boy.jpg" class="permalink" data-lightbox="bikes" data-title="Banana Boy Custom">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Banana Boy Custom</h3>
+							<span class="category">Bicycles</span>
+
+							<img src="images/bikes/Banana_Boy.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/bikes/Concorde.jpg" class="permalink" data-lightbox="bikes" data-title="1993 Concorde Aqulia TSX">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>1993 Concorde Aquila TSX</h3>
+							<span class="category">Bicycles</span>
+
+							<img src="images/bikes/Concorde.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/bikes/Davidson.jpg" class="permalink" data-lightbox="bikes" data-title="1984 Davidson World Tour">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>1984 Davidson World Tour</h3>
+							<span class="category">Bicycles</span>
+
+							<img src="images/bikes/Davidson.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<div class="clear"></div>
+
+				<a href="images/bikes/Medici.jpg" class="permalink" data-lightbox="bikes" data-title="1983 Medici Pro Strada">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>1983 Medici Pro Strada</h3>
+							<span class="category">Bicycles</span>
+
+							<img src="images/bikes/Medici.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/bikes/Serotta.jpg" class="permalink" data-lightbox="bikes" data-title="1994 Serotta CRL">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>1994 Serotta CRL</h3>
+							<span class="category">Bicycle</span>
+
+							<img src="images/bikes/Serotta.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<a href="images/bikes/Surly.jpg" class="permalink" data-lightbox="bikes" data-title="Surly Cross-Check">
+					<div class="desktop-3 mobile-half columns">
+						<div class="item">
+							<h3>Surly Cross Check</h3>
+							<span class="category">Bicycles</span>
+
+							<img src="images/bikes/Surly.jpg" alt="" />
+						</div><!-- // .item -->
+					</div><!-- // .desktop-3 -->
+				</a>
+
+				<div class="desktop-12 mobile-full columns"><h1 class="title">Websites</h1></div>
+				
+				<div class="clear"></div>
+			
+		</div><!-- // .container -->
+	</section><!-- // section#works -->
+
+
+
+
+	<!-- Footer
+	================================================== -->
+	<section id="footer">
+		<div class="container">
+			<div class="desktop-3 columns">
+			</div><!-- // .desktop-3 -->
+
+			<div class="desktop-9 columns">
+				<ul id="social">
+					<li><a href="http://www.facebook.com" class="hoverMe">Facebook</a></li>
+					<li><a href="http://www.twitter.com" class="hoverMe">Twitter</a></li>
+					<li><a href="http://www.google.com" class="hoverMe">Google+</a></li>
+				</ul><!-- // #social -->
+			</div><!-- // .desktop-9 -->
+
+			<div class="clear"></div>
+		</div><!-- // .container -->
+	</section><!-- // section#footer -->
+
+
+	<!-- JS
+	================================================== -->
+	<!-- 
+		Flexslider 2.1 has known issues of manualControls setting with jQuery 1.9~
+		Use jQuery 1.8 until Flexslider 2.2 stable version is released
+	-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="js/jQuery.BlackAndWhite.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/less-1.4.0.min.js"></script>
+	<script src="js/jquery.typeMenu.js"></script>
+	<script src="js/jquery.typeSticky.js"></script>
+
+
+	
+
+	
+
+
+	
+
+
+	<script src="js/jquery.custom.js"></script>
+	<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+
+<!-- End Document
+================================================== -->
+</body>
 </html>
