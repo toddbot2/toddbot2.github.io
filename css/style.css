@@ -1449,9 +1449,6 @@ b, strong { font-weight: bold; }
 	background-color: #22313F;
 }
 
-.bullshit{
-	clear: both;
-}
 /*--------------------------------------------------------------------------
 	4. jQuery Plugins
 --------------------------------------------------------------------------*/
@@ -1567,6 +1564,9 @@ b, strong { font-weight: bold; }
 			visibility: hidden;
 			margin: 0;
 			height: 0;
+		}
+		.bullshit{
+			clear: both;
 		}
 	}
 
