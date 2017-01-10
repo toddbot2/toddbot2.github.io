@@ -758,6 +758,7 @@
   }
   .mobile-half {
     width: 50%;
+    clear: both;
   }
 }
 /* Mobile - Landscape */
