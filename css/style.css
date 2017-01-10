@@ -1567,7 +1567,7 @@ b, strong { font-weight: bold; }
 		}
 	}
 
-	@media screen and (min-width: 380px) and (max-width: 767px){
+	@media screen and (min-width: 300px) and (max-width: 767px){
 		.bullshit{
 			clear: both;
 		}
