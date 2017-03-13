@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "abril fatface";
+	src: url("AbrilFatFace.otf");
+}
+
 section{
 	margin: 10px 0;
 	font-size: 24px;
@@ -32,13 +37,16 @@ section{
 	clear: both;
 }
 
+
 .leadin{
-	position: absolute;
-	font-family: "abril fatface";
-	font-size: 10vh;
-	top: 44%;
-	left: 10%;
-}
+	
+		position: absolute;
+		font-family: "abril fatface";
+		font-size: 10vh;
+		top: 44%;
+		left: 10%;
+	}
+
 
 .portrait img{
 	width: 100%;
@@ -50,10 +58,9 @@ section{
 
 
 .mod_quote{
-	color: black;
-	font-size: 75px;
-	font-family: "abril fatface";
-
+		color: black;
+		font-size: 75px;
+		font-family: "abril fatface";
 }
 
 .alt_quote{
@@ -62,10 +69,10 @@ section{
 }
 
 .quote{
-	font-family: "abril fatface";
-	font-size: 150px;
-	height: 300px;
-	color: white;
+		font-family: "abril fatface";
+		font-size: 150px;
+		height: 300px;
+		color: white;
 }
 
 
@@ -97,9 +104,9 @@ section{
 }
 
 .quote_new{
-	font-size: 60px;
-	color: white;
-	font-family: "abril fatface";
+		font-size: 60px;
+		color: white;
+		font-family: "abril fatface";
 }
 
 .drug-title{
@@ -112,8 +119,8 @@ section{
 }
 
 .quote_two{
-	font-size: 85px;
-	font-family: "abril fatface";
+		font-size: 85px;
+		font-family: "abril fatface";
 }
 
 #thing{
