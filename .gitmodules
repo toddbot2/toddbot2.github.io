@@ -1,0 +1,3 @@
+[submodule "website/js/sticky-kit.js"]
+	path = website/js/sticky-kit.js
+	url = https://github.com/leafo/sticky-kit.git
