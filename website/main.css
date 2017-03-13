@@ -3,21 +3,11 @@ section{
 	font-size: 24px;
 	font-family: "open sans";
 }
-#one{
-	
-}
 
 .image img{
 	width: 100%;
 }
 
-.two{
-
-}
-
-.three{
-	
-}
 
 .left{
 	float: left;
@@ -31,6 +21,7 @@ section{
 	height: 100%;
 	width: 40%;
 	margin-right: 5%;
+
 }
 
 .center{
@@ -49,10 +40,6 @@ section{
 	left: 10%;
 }
 
-.white{
-	color: white;
-}
-
 .portrait img{
 	width: 100%;
 }
@@ -62,8 +49,16 @@ section{
 }
 
 
-#one{
+.mod_quote{
+	color: black;
+	font-size: 75px;
+	font-family: "abril fatface";
 
+}
+
+.alt_quote{
+	color: black;
+	font-size: 150px;
 }
 
 .quote{
@@ -73,10 +68,79 @@ section{
 	color: white;
 }
 
-#twoId{
-	height:2100px;
+
+.fullwidth{
+	z-index: -9999;
 }
 
-#first{
-	z-index: -9999;
+.relaxed{
+	margin: 0 19%;
+}
+
+#v0 {
+  width: 100%;
+}
+
+.sec-ten p{
+	line-height: 75px;
+	font-size: 70px;
+}
+
+.sec-twelve{
+	font-size: 50px;
+	color: black;
+}
+
+.sec-seven p{
+	font-size: 65px;
+	line-height: 70px;
+}
+
+.quote_new{
+	font-size: 60px;
+	color: white;
+	font-family: "abril fatface";
+}
+
+.drug-title{
+	font-family: 
+}
+
+#smaller{
+	font-size: 65px;
+	color: black;
+}
+
+.quote_two{
+	font-size: 85px;
+	font-family: "abril fatface";
+}
+
+#thing{
+	font-size: 45px;
+}
+
+.white{
+	color: white;
+}
+
+#thirteenId{
+	height: 1500px;
+}
+
+#tenId{
+	height:2000px;
+}
+
+#twoId, #thirteenId{
+	height:2600px;
+}
+
+#threeId, #tenId, #nineId{
+	height: 2900px;
+}
+
+#set-height {
+  display: block;
+  height: 1400px;
 }
