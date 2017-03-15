@@ -1,7 +1,4 @@
-@font-face{
-	font-family: "abril fatface";
-	src: url("AbrilFatFace.ttf");
-}
+
 
 section{
 	margin: 10px 0;
@@ -46,6 +43,9 @@ section{
 	left: 10%;
 	}
 
+.right, .left{
+	margin: 10px, 0;
+}
 
 .portrait img{
 	width: 100%;
