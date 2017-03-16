@@ -119,8 +119,8 @@ section{
 .drug-title span{
 }
 
-.height{
-	
+.vid{
+	width: 100%;
 }
 
 .drug-desc{
@@ -139,8 +139,11 @@ section{
 }
 
 #drop{
-	font-size: 70px;
+	font-size: 170px;
 	font-family: "abril fatface";
+	line-height: 70px;
+	float: left;
+	margin-top: 50px;
 }
 
 #short-line{
