@@ -1,0 +1,138 @@
+/*=============GLOBAL RULES===========*/
+.container{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 400px;
+	padding:50px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.headline{
+	font-size: 90px;
+	color: white;
+	z-index: 500;
+}
+
+.subhead{
+	font-size: 65px;
+	color: white;
+	z-index: 500;
+	width: 75%;
+}
+
+.clear{
+	clear: both;
+}
+
+p {
+	font-size: 19px;
+	letter-spacing: .05px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 28px;
+}
+
+.quote{
+
+}
+
+.attribution{
+	font-size: 17px;
+	letter-spacing: .2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+/*=============LEAD RULES===========*/
+#fact1 {
+
+}
+
+.leadcontainer{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 800px;
+}
+
+#vid-1{
+	position: absolute;
+	margin-top:-100px;
+}
+
+#intro{
+	height:2000px;
+}
+
+/*=============HISTORY RULES===========*/
+#history{
+	background:black;
+	color:white;
+}
+
+#history img{
+	width: 40%;
+	padding:20px;
+}
+
+#sticky-history{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#history-text{
+	display:flex;
+	flex-direction: column;
+	padding-left: 50px;
+}
+
+#history-pics{
+	display:flex;
+	flex-direction: column;
+	padding-left: 50px;
+	justify-content: flex-end;
+}
+
+#block-container{
+	margin-top: 200px;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#vid-container{
+	margin-top:100px;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+/*=============DATA RULES===========*/
+#data {
+	display: flex;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+#fish1 {
+}
+
+#fish2 {
+}
+
+
+
+/*=============CONTINUING REMEDIATION RULES===========*/
+
+/*=============LOOKING AHEAD RULES===========*/
