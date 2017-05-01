@@ -1,8 +1,8 @@
 $("#vid-1").stick_in_parent();
 
 $("#one").stick_in_parent({offset_top:200});
-$("#two").stick_in_parent({offset_top:250});
-$("#three").stick_in_parent({offset_top:300});
+$("#two").stick_in_parent({offset_top:350});
+$("#three").stick_in_parent({offset_top:500});
 
 $(".stick-1").stick_in_parent();
 
@@ -31,3 +31,5 @@ $('#one, #two, #three')
     enable: false
   }
 });*/
+
+

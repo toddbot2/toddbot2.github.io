@@ -92,6 +92,11 @@ p {
 	color:white;
 }
 
+#map-vid{
+	position: absolute;
+	z-index: 99;
+}
+
 #history img{
 	width: 40%;
 	padding:20px;
@@ -105,15 +110,16 @@ p {
 
 #history-text{
 	display:flex;
+	flex-wrap: wrap;
 	flex-direction: column;
-	padding-left: 50px;
 }
 
 #history-pics{
 	display:flex;
 	flex-direction: column;
-	padding-left: 50px;
-	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+
 }
 
 #block-container{
@@ -131,9 +137,14 @@ p {
 	margin: 0 auto;
 }
 
-.bullet{
+/*.bullet{
 	height:750px;
-}
+
+}*/
+
+/*.bullet p{
+	font-size: 40px;
+}*/
 
 #vid-2{
 	display: block;
