@@ -1,4 +1,6 @@
 $("#vid-1").stick_in_parent();
+$("#vid-3").stick_in_parent();
+/*$("#base").stick_in_parent();*/
 
 $("#one").stick_in_parent({offset_top:200});
 $("#two").stick_in_parent({offset_top:350});

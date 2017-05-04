@@ -66,6 +66,12 @@ p {
 	margin-top:-100px;
 }
 
+#base{
+	position: absolute;
+	margin-top: 1700px;
+	width: 100%;
+}
+
 #intro{
 	height:2000px;
 }
@@ -93,8 +99,8 @@ p {
 }
 
 #map-vid{
-	position: absolute;
-	z-index: 99;
+	margin: 0 auto;
+	display: flex;
 }
 
 #history img{
@@ -142,9 +148,10 @@ p {
 
 }*/
 
-/*.bullet p{
-	font-size: 40px;
-}*/
+.bullet p{
+	
+
+}
 
 #vid-2{
 	display: block;
@@ -158,6 +165,20 @@ p {
 	padding: 30px 200px 0 200px;
 }
 
+/*=============SEDIMENT===========*/
+
+.sed{
+	width: 80%;
+}
+
+#dam-down{
+	position: absolute;
+	font-size: 50px;
+	color: white;
+	padding: 0 250px;
+	line-height: 80px;
+	margin-top: 180px;
+}
 
 /*=============DATA RULES===========*/
 #data {
@@ -177,3 +198,16 @@ p {
 
 
 /*=============LOOKING AHEAD RULES===========*/
+#ahead{
+	height: 2500px;
+}
+
+#vid-3{
+	position: absolute;
+}
+
+.pull-2{
+	font-size: 65px;
+	color: white;
+	margin-top: 500px;
+}
