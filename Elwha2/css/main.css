@@ -1,0 +1,324 @@
+/*=============GLOBAL RULES===========*/
+body{
+	overflow-x: hidden;
+}
+.container{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 400px;
+	padding:50px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.headline{
+	font-size: 90px;
+	color: white;
+	z-index: 500;
+}
+
+.subhead{
+	font-size: 65px;
+	color: white;
+	z-index: 500;
+	width: 75%;
+}
+
+.clear{
+	clear: both;
+}
+
+p {
+	font-size: 19px;
+	letter-spacing: .05px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 28px;
+}
+
+.attribution{
+	font-size: 17px;
+	letter-spacing: .2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.quote{
+	font-size: 50px;
+	padding: 0 200px;
+}
+
+.body {
+	font-size: 40px;
+	padding: 0 14%
+}
+
+.white {
+	color:white;
+}
+/*=============HEADER===========*/
+#header{
+	background-color: #99c2ff;
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	left: 0;
+	top: 0;
+	padding-top: 10px;
+}
+
+#header a{
+	transition: .5s;
+}
+
+#header a:visited{
+	color: black;
+}
+
+#header a:hover{
+	color: white;
+}
+
+.head{
+}
+
+
+/*=============LEAD RULES===========*/
+#headline{
+	font-size: 120px;
+	color: white;
+	z-index: 500;
+	text-align: center;
+}
+
+#the {
+	font-size: 90px;
+}
+
+.leadcontainer{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 800px;
+}
+
+#vid-1{
+	position: absolute;
+	margin-top:-100px;
+}
+
+#base{
+	position: absolute;
+	margin-top: 1680px;
+	width: 100%;
+}
+
+#intro{
+	height:2000px;
+}
+
+/*====================INTRO RULES==============*/
+#intro-sent{
+	position: absolute;
+	z-index: 9;
+	font-size: 4em;
+	color: white;
+	margin-top: 1200px;
+	padding: 0 200px;
+}
+
+#map{
+	height: 500px;
+	width: 500px;
+	padding-top: 50px;
+}
+
+/*=============HISTORY RULES===========*/
+#history{
+	background:black;
+	color:white;
+}
+
+#map-vid{
+	margin: 0 auto;
+	display: flex;
+}
+
+#history img{
+	width: 40%;
+	padding:20px;
+}
+
+#sticky-history{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#history-text{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 300px;
+	left: 5%;
+}
+
+#history-pics{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+#block-container{
+	margin-top: 200px;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#vid-container{
+	/*margin-top:140px;*/
+	/*display: flex;
+	flex-direction:column;
+	align-items:center;*/
+	margin: 0 auto;
+}
+
+/*.bullet{
+	height:750px;
+
+}*/
+
+.bullet p{
+	
+
+}
+
+#vid-2{
+	display: block;
+	margin: 0 auto;
+	width:50%;
+	padding: 40px 0;
+}
+
+.dam-copy{
+	font-size: 35px;
+	padding: 30px 200px 0 200px;
+}
+
+/*=============SEDIMENT===========*/
+
+.sed{
+	width: 80%;
+}
+
+#darken-vid {
+background:black;
+opacity:.15;
+}
+
+#dam-down{
+	position: absolute;
+	font-size: 50px;
+	color: white;
+	padding: 0 250px;
+	line-height: 80px;
+	margin-top: 180px;
+}
+
+/*=============DATA RULES===========*/
+.year{
+	position: absolute;
+	right: 10%;
+	font-size: 3em;
+}
+
+#y2011{
+	top:9500px;
+}
+
+#y2013{
+	top:13500px;
+}
+
+#y2015{
+	top:15500px;
+}
+
+.divider{
+	width: 100%;
+	border-top: 1px dashed black;
+	position: absolute;
+}
+
+#divider-one{
+	top: 9550px;
+}
+
+#divider-two{
+	top: 13550px;
+}
+
+#divider-three{
+	top: 15550px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+#long{
+	height: 3000px;
+}
+
+/*=============SEDIMENT RULES===========*/
+
+
+/*=============LOOKING AHEAD RULES===========*/
+#ahead{
+	height: 2500px;
+}
+
+#vid-3{
+	position: absolute;
+}
+
+.pull-2{
+	font-size: 65px;
+	color: white;
+	margin-top: 500px;
+}
+
+
+/*===============CODEPENTEST===================*/
+.scrollSec {
+  height:5500px;
+}
+
+.fish {
+  background:blue;
+  width: 50px;
+  height: 50px;
+  display:none;
+}
+
+#a {right:60%;}
+#b {right:70%;}
+#c {right:30%;}
+#d {right:40%;}
+#e {right:50%;}
+#f {right:20%;}
+#g {right:55%;}
+#h {right:73%;}
+#i {right:37%;}
