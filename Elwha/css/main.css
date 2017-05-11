@@ -1,0 +1,403 @@
+/*=============GLOBAL RULES===========*/
+body{
+	overflow-x: hidden;
+}
+.container{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 400px;
+	padding:50px;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.headline{
+	font-size: 90px;
+	color: white;
+	z-index: 500;
+}
+
+.subhead{
+	font-size: 65px;
+	color: white;
+	z-index: 500;
+	width: 75%;
+}
+
+.clear{
+	clear: both;
+}
+
+p {
+	font-size: 19px;
+	letter-spacing: .05px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 28px;
+}
+
+.attribution{
+	font-size: 17px;
+	letter-spacing: .2px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.quote{
+	font-size: 0px;
+	padding: 0 200px;
+	font-family: "merriweather";
+	font-size:35px;
+	width: 50%;
+
+}
+
+#close{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.body {
+	font-size: 30px;
+	padding: 0 14%;
+	font-family: "merriweather";
+	width: 50%;
+}
+
+.white {
+	color:white;
+}
+/*=============HEADER===========*/
+#header{
+	background-color: white;
+	height: 30px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	left: 0;
+	top: 0;
+	padding-top: 10px;
+}
+
+#header a{
+	text-decoration: none;
+	list-style: none;
+	transition: .5s;
+	color: black;
+	font-family: 'open sans';
+}
+
+#header a:visited{
+	color: black;
+}
+
+#header a:hover{
+	color: #99c2ff;
+}
+
+.head{
+}
+
+
+/*=============LEAD RULES===========*/
+#headline{
+	font-size: 120px;
+	color: white;
+	z-index: 500;
+	text-align: center;
+	font-family: "merriweather";
+}
+
+#the {
+	font-size: 90px;
+}
+
+.leadcontainer{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	min-height: 800px;
+}
+
+#vid-1{
+	position: absolute;
+	margin-top:-100px;
+}
+
+#base{
+	position: absolute;
+	margin-top: 1680px;
+	width: 100%;
+}
+
+#intro{
+	height:2000px;
+}
+
+/*====================INTRO RULES==============*/
+#intro-sent{
+	position: absolute;
+	z-index: 9;
+	width: 50%;
+	font-size: 35px;
+	color: white;
+	margin-top: 1200px;
+	padding: 0 200px;
+	font-family: "merriweather";
+}
+
+#map{
+	height: 500px;
+	width: 500px;
+	padding-top: 50px;
+}
+
+/*=============HISTORY RULES===========*/
+#merp{
+	padding-top: 70px;
+}
+.mel{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: auto 0;
+
+}
+
+.mel img{
+	height:600px;
+}
+#history{
+	background:black;
+	color:white;
+}
+
+#map-vid{
+	margin: 0 auto;
+	display: flex;
+}
+
+#history img{
+	width: 40%;
+	padding:20px;
+}
+
+#sticky-history{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#history-text{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 300px;
+	width:30%;
+	left: 5%;
+
+}
+
+#history-text div{
+	font-size: 35px;
+	line-height: 40px;
+	font-family: "merriweather";
+}
+
+#history-pics{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+#block-container{
+	margin-top: 200px;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#vid-container{
+	margin: 0 auto;
+}
+
+#vid-2{
+	display: block;
+	margin: 0 auto;
+	width:50%;
+	padding: 40px 0;
+}
+
+.dam-copy{
+	font-size: 35px;
+	padding: 30px 200px 0 200px;
+	width: 50%;
+}
+
+/*=============SEDIMENT===========*/
+
+.sed{
+	width: 80%;
+}
+
+#darken-vid {
+background:black;
+opacity:.15;
+}
+
+#dam-down{
+	position: absolute;
+	font-size: 35px;
+	color: white;
+	padding: 0 250px;
+	line-height: 40px;
+	/*line-height: 80px;*/
+	margin-top: 180px;
+}
+
+#dam-down span{
+	padding: 0;
+}
+/*=============DATA RULES===========*/
+.year{
+	position: absolute;
+	right: 10%;
+	font-size: 3em;
+}
+
+#y2011{
+	top:9500px;
+}
+
+#y2013{
+	top:10950px;
+}
+
+#y2015{
+	top:12500px;
+}
+
+.divider{
+	width: 100%;
+	border-top: 1px dashed black;
+	position: absolute;
+}
+
+#divider-one{
+	top: 9550px;
+}
+
+#divider-two{
+	top: 11000px;
+}
+
+#divider-three{
+	top: 12550px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+#long{
+	height: 3000px;
+}
+ #pink{
+ 	color: #eb755e;
+ }
+
+ #green{
+ 	color:#6d8642;
+ }
+/*=============SEDIMENT RULES===========*/
+
+
+/*=============LOOKING AHEAD RULES===========*/
+#ahead{
+	height: 2500px;
+}
+
+#vid-3{
+	position: absolute;
+}
+
+.pull-2{
+	font-size: 45px;
+	color: white;
+	margin-top: 500px;
+	
+	font-family: "merriweather";
+}
+
+#adeline{
+	padding: 30px 0;
+}
+
+#adeline img{
+	height: 350px;
+}
+
+/*===============CODEPENTEST===================*/
+.scrollSec {
+  height:5500px;
+}
+
+.fish {
+  
+  width: 50px;
+  height: 50px;
+  display:none;
+}
+
+.fish img{
+	height: 200px;
+}
+
+.legend{
+
+}
+
+.legend-pin{
+	display: flex;
+	justify-content: 
+}
+
+#a {right:10%;}
+#b {right:20%;}
+#c {right:30%;}
+#d {right:40%;}
+#e {right:50%;}
+#f {right:60%;}
+#g {right:70%;}
+#h {right:80%;}
+#i {right:90%;}
+#j {right:15%;}
+#k {right:25%;}
+#l {right:35%;}
+#m {right:45%;}
+#n {right:55%;}
+#o {right:65%;}
+#p {right:75%;}
+#q {right:85%;}
+#r {right:95%;}
+#s {right:10%;}
+#t {right:30%;}
+#u {right:40%;}
+#v {right:60%;}
+#w {right:70%;}
+#x {right:90%;}
+
