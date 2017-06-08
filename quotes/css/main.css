@@ -1,0 +1,266 @@
+body{
+	margin: 0
+}
+#hero{
+	display: flex;
+	justify-content: center;
+	font-size: 7vw;
+	background-color: black;
+	color: #ffbf80;
+	height: 120vh;
+	padding: 0 10%;
+	text-align: center;
+	line-height: 180px;
+}
+
+#wise{
+	font-family: 'Alex Brush', cursive;
+	font-size: 19vw;
+}
+
+.row img{
+	width: 40vw;
+	padding: 0	2vw;
+}
+
+a{
+	text-decoration: none;
+	list-style: none;
+	color:#ffbf80;
+}
+
+
+/*=====================GENERAL===========================*/
+
+/*.container{
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 50% 50%;
+	text-align: center;
+}*/
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	height: 100vh;
+	align-items:center;
+
+}
+
+.container div{
+	width: 100%;
+	min-height: 50px;
+	color: #ffbf80;
+	background-color: black;
+}
+
+.image{
+	
+	margin: 0 20px;
+}
+
+.quote{
+	background-color: black ;
+	padding: 0 50px;
+}
+
+.quote div{
+	font-size: 4vw;
+}
+
+.attribution{
+	font-size: 1.6vw;
+	font-family: "Cormorant SC", serif;
+}
+
+.big{
+	font-size: 8vw;
+}
+
+.q1{
+	font-size: 3em;
+}
+/*=========================SPECIFIC=======================*/
+
+/*============================ONE===========================*/
+
+
+#quote-one{
+	font-family:"Josefin Sans";
+
+}
+
+/*============================TWO===========================*/
+
+#quote-two{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#yap{
+	font-size: 10vw;
+	font-family: "Cormorant SC", serif;
+}
+
+#snap{
+	font-size: 10vw;
+	font-family: 'Abril Fatface', cursive;
+	
+}
+
+#crap{
+	font-size: 10vw;
+	font-family: "Lobster", cursive;
+}
+
+#yap-img img{
+	height: 50vw;
+}
+
+/*============================THREE===========================*/
+
+#quote-three{
+	font-family: 'Italiana', serif;
+	font-size: 6vw;
+
+}
+
+#ralph{
+	font-family:"Josefin Sans";
+	font-size: 8vw;
+}
+
+#psychic{
+	font-family: 'Codystar', cursive;
+
+}
+
+.small{
+	font-size: 2vw;
+	line-height: 7px;
+}
+/*============================FOUR===========================*/
+#quote-four{
+	font-size: 4vw;
+	font-family: 'Balthazar', serif;
+}
+
+#hog{
+	font-size: 8vw;
+	font-family: 'IM Fell English SC', serif;
+}
+
+#time{
+	font-size: 6vw;
+	font-family: 'Suez One', serif;
+}
+
+/*============================FIVE===========================*/
+#quote-five{
+	font-family: 'Frijole';
+	font-size: 3vw;
+}
+
+#dane-img img{
+	height:  50vh;
+}
+/*============================SIX===========================*/
+#fancy{
+	font-family: 'Gruppo';
+	font-size: 7vw;
+}
+
+#box{
+	font-size: 6vw;
+	font-family: 'Amatic SC';
+}
+/*============================SEVEN===========================*/
+#quote-seven {
+	font-family: 'Trochut';
+
+}
+
+#bitch{
+	
+	font-family: 'Metal Mania', cursive;
+	font-size: 7vw;
+
+}
+
+#biotch{
+	font-size: 7vw;
+	font-family: 'Eater', cursive;
+	line-height: 70px;
+}
+
+/*============================EIGHT===========================*/
+#quote-eight{
+
+}
+
+#fancy{
+	font-family: 'Pinyon Script', cursive;
+}
+
+
+
+
+/*============================NINE===========================*/
+#shot{
+	font-family: 'Emblema One';
+	font-size: 6vw; 
+
+}
+
+/*============================TEN===========================*/
+#lorde img{
+	height: 50vw;
+}
+
+#just{
+	
+	font-family: 'Monofett', cursive;
+	font-size: 7vw;
+}
+
+#not{
+
+	font-family: 'Bungee Hairline', cursive;
+	font-size: 7vw;
+}
+
+
+/*#l{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 7vw;
+}
+
+#o{
+	font-family: 'Amatic SC';
+}
+
+#r{
+	font-family: 'Gruppo';
+	font-size: 9vw;
+}
+
+#d{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#e{
+	font-family: "Lobster", cursive;
+}*/
+/*========================MEDIA QUERIES======================*/
+@media (max-width: 700px){
+	.row{
+		flex-wrap: wrap;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	img{
+		height: 50%;
+		width: 50%;
+
+	}
+}
