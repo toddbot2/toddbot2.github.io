@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	background-color: #00AD76;
+	overflow: hidden;
+}
+#title{
+	
+	height: 29vh;
+	margin: 0 auto;
+	/*background-color: #EF3F30;*/
+	background-image: url(img/red1.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+}
+
+.flex-center{
+	
+	
+}
+
+
+
+#logo{
+	width: 60vw;
+	padding-top: 20px;
+
+	
+}
+
+#nav-left{
+	font-family: "Neutraface 2 Display", sans-serif;
+	font-weight: 800;
+	display: flex;
+	background-image: url(img/yellow.svg);
+	background-repeat: no-repeat;
+	padding-bottom: 10%;
+	margin-top: -4.5%;
+	
+
+}
+
+#blue{
+	background-image: url(img/blue.svg);
+	height: 2090vh;
+	width: 50vw;
+	background-repeat: no-repeat;	
+	position: absolute;	
+	top: 0vh;
+	right: 0;
+	z-index: -9;
+}
+
+#nav-left ul{
+	color:#EF3F30;
+	list-style: none;
+	font-size: 2.5vw;	
+}
+
+#nav-left ul li{
+	padding: 10% 0;
+	transition: .5s;
+	transform: rotate(-15deg);
+}
+
+#nav-left ul li:hover{
+	transform: rotate(15deg);
+	transform: scale(1.2);
+}
+
+#insta{
+	display: flex;
+	justify-content: center;
+	margin-top: -30%;
+}
+
