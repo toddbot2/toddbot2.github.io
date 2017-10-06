@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, html, .main {
+    height: 100%;
+}
+
+section { padding-top:80px; border-bottom: thin grey solid;
+    min-height: 100%; background: #f2f2f2;
+	}
+	 nav {position: fixed;width: 100%; height: 60px; top:0; left:0px; z-index: 100; background: #999; padding-top:30px;}
+	 nav a {display:block; width:150px; text-align:center; float: left;}
+	img {width:100%; height: auto; max-width:100%;} 
+	 /*css grid stuff here*/
+	 .wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col3-end];
+        grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+        background-color: #fff;
+        color: #444;
+    }
+#us-map{
+
+}
+
+.center {display: block;
+    text-align: center;
+    width: 200px;
+	text-decoration:none;
+	color:#3E6377;}
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#f2f2f2;
+	border-radius:5px;
+	padding:10px;
+	color:#333;
+	font-size:21px;
+}
+path:hover, circle:hover {
+  stroke: #002868 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002868 !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #BF0A30;
+  border-radius: 5px;
+  padding: 50px;
+  font-family: arial;
+  
+}
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+
+    }
+
+    .hero {
+        grid-column: col1-start / col3-start;
+        grid-row: row1-start ;
+    }
+    .data {
+        grid-column: col3-start ;
+        grid-row: row1-start / row2-end;
+    }
+    .logo {
+        grid-column: col1-start;
+        grid-row: row2-start ;
+    }
+    .type {
+        grid-column: col2-start ;
+        grid-row: row2-start ;
+    }
