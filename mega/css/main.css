@@ -1,0 +1,59 @@
+#nav li{
+	display: inline-grid;
+	justify-items: end;
+
+}
+
+.region{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: tan;
+
+
+}
+
+.copy{
+	height: 10vh;
+	background-color: grey;
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+.info{
+	height: 10vh;
+	background-color: pink;
+	grid-column:1/2;
+	grid-row: 2;
+
+	
+	
+}
+
+.logo{
+	height: 20vh;
+	background-color: purple;
+	grid-column:2;
+	grid-row:1/3;
+
+}
+
+
+.copy-other{
+	height: 10vh;
+	background-color: grey;
+	grid-column:2/3;
+	grid-row:1;
+
+}
+.info-other{
+	height: 10vh;
+	background-color: pink;
+	grid-column:2/3;
+	grid-row:2;
+}
+.logo-other{
+	height: 20vh;
+	background-color: purple;
+	grid-column:1;
+	grid-row:1/3
+}
