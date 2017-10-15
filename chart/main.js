@@ -8,7 +8,7 @@ var chart = new Chart(ctx, {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
             label: "Is this thing working?",
-            backgroundColor: 'rgb(255, 99, 132,0.4)',
+            backgroundColor: 'rgba(255, 255, 100,0.4)',
             data: [0, 10, 5, 2, 20, 30, 45],
           }, {
           label: 'oranges',
