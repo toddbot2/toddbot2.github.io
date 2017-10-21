@@ -47,15 +47,15 @@ var ctx = document.getElementById('PacificCoast').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [18.9, 5.3, 1.1]
+      data: [1.89, 5.3, 1.1]
       
     },{
       label: "Projected",
-      data: [19.9, 12.1, 1.5],
+      data: [1.99, 1.21, 1.5],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -84,15 +84,15 @@ var ctx = document.getElementById('GreatPlains').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [40.7, 10.3, 1.8]
+      data: [4.07, 1.03, 1.8]
       
     },{
       label: "Projected",
-      data: [43.1, 13.8, 2.5],
+      data: [4.31, 1.38, 2.5],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -119,15 +119,15 @@ var ctx = document.getElementById('GreatLakes').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [58.3, -1.7, 2.6]
+      data: [5.83, -1.7, 2.6]
       
     },{
       label: "Projected",
-      data: [58.9, 8, 3.2],
+      data: [5.89, 8, 3.2],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -154,15 +154,15 @@ var ctx = document.getElementById('InlandWest').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [32.3, 8.8, 1.3]
+      data: [3.23, 8.8, 1.3]
       
     },{
       label: "Projected",
-      data: [34.6, 14.6, 1.8],
+      data: [3.46, 14.6, 1.8],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -189,15 +189,15 @@ var ctx = document.getElementById('GreatNE').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [41.6, 3.1, 2.2]
+      data: [4.16, 3.1, 2.2]
       
     },{
       label: "Projected",
-      data: [42.7, 10.3, 2.8],
+      data: [4.27, 10.3, 2.8],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -224,15 +224,15 @@ var ctx = document.getElementById('GulfCoast').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [16.6, 9.8, .85]
+      data: [1.66, 9.8, .85]
       
     },{
       label: "Projected",
-      data: [17.8, 15.5, 1.2],
+      data: [1.78, 15.5, 1.2],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -259,15 +259,15 @@ var ctx = document.getElementById('SEMan').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population", "Job Growth", "GDP"],
+    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [61.2, 4.1, 2.4]
+      data: [6.12, 4.1, 2.4]
       
     },{
       label: "Projected",
-      data: [64.3, 10.7, 3.1],
+      data: [6.43, 10.7, 3.1],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
