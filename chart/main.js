@@ -1,292 +1,309 @@
-/*var ctx = document.getElementById('chartOne').getContext('2d');
+/*=======================PACIFIC COAST======================*/
+var ctx = document.getElementById('PacificCoast_Job').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'radar',
-
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "Is this thing working?",
-            backgroundColor: 'rgba(0, 0, 255,0.4)',
-            data: [10, 10, 5, 2, 20, 30, 45],
-          }, {
-          label: 'oranges',
+  type: "bar",
+  data:{
+    labels: ["Job Growth (%)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [ 5.3]
       
-      data: [12, 29, 5, 5, 2, 3, 10],
-      backgroundColor: "rgba(255,153,0,0.4)"
     },{
-      label: 'butt stuff',
+      label: "Projected",
+      data: [1.21],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+    yAxes: [{
+      ticks: {
+                    beginAtZero:true
+                },
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+
+var ctx = document.getElementById('PacificCoast_Pop').getContext('2d');
+var chart = new Chart(ctx, {
+  type: "bar",
+  data:{
+    labels: ["Population (10 million)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [1.89]
       
-      data: [30, 40, 0, 1, 17, 22, 50],
-      backgroundColor: "rgba(255,30,110,0.4)"
-        }]
+    },{
+      label: "Projected",
+      data: [1.99],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+    yAxes: [{
+      ticks: {
+                    beginAtZero:true
+                },
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+
+var ctx = document.getElementById('PacificCoast_GDP').getContext('2d');
+var chart = new Chart(ctx, {
+  type: "bar",
+  data:{
+    labels: ["GDP (trillions)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [ 1.1]
+      
+    },{
+      label: "Projected",
+      data: [ 1.5],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+        yAxes: [{
+          
+                ticks: {
+                    beginAtZero:true
+                },
+           
+          gridLines: {
+              display: false,
+              drawBorder: false,
+              },
+          }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+/*=====================GREAT PLAINS===================*/
+
+var ctx = document.getElementById('GreatPlains_Pop').getContext('2d');
+var chart = new Chart(ctx, {
+  type: "bar",
+  data:{
+    labels: ["Population (10 million)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [4.07]
+      
+    },{
+      label: "Projected",
+      data: [4.31],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+    yAxes: [{
+      ticks: {
+                    beginAtZero:true
+                },
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+var ctx = document.getElementById('GreatPlains_Job').getContext('2d');
+var chart = new Chart(ctx, {
+  type: "bar",
+  data:{
+    labels: ["Job Growth (%)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [1.03]
+      
+    },{
+      label: "Projected",
+      data: [1.38],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+    yAxes: [{
+      ticks: {
+                    beginAtZero:true
+                },
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+var ctx = document.getElementById('GreatPlains_GDP').getContext('2d');
+var chart = new Chart(ctx, {
+  type: "bar",
+  data:{
+    labels: ["GDP (trillions)"],
+    datasets: [{
+      label: "Current",
+      backgroundColor: "rgba(0, 0, 255, .4)",
+      data: [1.8]
+      
+    },{
+      label: "Projected",
+      data: [2.5],
+      backgroundColor: "rgba(255,153,0,0.4)",
+    }]
+  },
+    options: {
+      scales: {
+    yAxes: [{
+      ticks: {
+                    beginAtZero:true
+                },
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    xAxes: [{
+        gridLines: {
+            display: false,
+            drawBorder: false,
+        }
+    }],
+    responsive: true,
+}
+    }
+
+});
+
+/*=====================GREAT LAKES===================*/
+function makeChart(id, label, currentData, projectedData) {
+  var ctx = document.getElementById(id).getContext('2d');
+  var chart = new Chart(ctx, {
+    type: "bar",
+    data:{
+      labels: [label],
+      datasets: [{
+        label: "Current",
+        backgroundColor: "rgba(0, 0, 255, .4)",
+        data: [currentData]
+        
+      },{
+        label: "Projected",
+        data: [projectedData],
+        backgroundColor: "rgba(255,153,0,0.4)",
+      }]
     },
+      options: {
+        scales: {
+      yAxes: [{
+        ticks: {
+                      beginAtZero:true
+                  },
+          gridLines: {
+              display: false,
+              drawBorder: false,
+          }
+      }],
+      xAxes: [{
+          gridLines: {
+              display: false,
+              drawBorder: false,
+          }
+      }],
 
-    // Configuration options go here
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
+  }
+      }
+
+  });
 }
-    }
-});*/
 
-var ctx = document.getElementById('PacificCoast').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [1.89, 5.3, 1.1]
-      
-    },{
-      label: "Projected",
-      data: [1.99, 1.21, 1.5],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
-
-});
+makeChart('GreatLakes_Pop', 'Population (10 millions)', 5.83, 5.89);
+makeChart('GreatLakes_Job', 'Job Growth (%)', -1.7, 8);
+makeChart('GreatLakes_GDP', 'GDP (trillions)', 2.6, 3.2);
 
 
-var ctx = document.getElementById('GreatPlains').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [4.07, 1.03, 1.8]
-      
-    },{
-      label: "Projected",
-      data: [4.31, 1.38, 2.5],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
+/*=====================INLAND WEST===================*/
+/*makeChart("InlandWest", "Population (10 millions")
+*/
+makeChart('InlandWest_Pop', 'Population (10 millions)', 3.23, 3.46);
+makeChart('InlandWest_Job', 'Job Growth (%)', 8.8, 14.6);
+makeChart('InlandWest_GDP', 'GDP (trillions)', 1.3, 1.8);
 
-});
-var ctx = document.getElementById('GreatLakes').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [5.83, -1.7, 2.6]
-      
-    },{
-      label: "Projected",
-      data: [5.89, 8, 3.2],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
 
-});
-var ctx = document.getElementById('InlandWest').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [3.23, 8.8, 1.3]
-      
-    },{
-      label: "Projected",
-      data: [3.46, 14.6, 1.8],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
+/*=====================GREAT NE===================*/
+makeChart('GreatNortheast_Pop', 'Population (10 millions)', 4.16, 4.27);
+makeChart('GreatNortheast_Job', 'Job Growth (%)', 3.1, 10.3);
+makeChart('GreatNortheast_GDP', 'GDP (trillions)', 2.2, 2.8);
 
-});
-var ctx = document.getElementById('GreatNE').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [4.16, 3.1, 2.2]
-      
-    },{
-      label: "Projected",
-      data: [4.27, 10.3, 2.8],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
 
-});
-var ctx = document.getElementById('GulfCoast').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [1.66, 9.8, .85]
-      
-    },{
-      label: "Projected",
-      data: [1.78, 15.5, 1.2],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
+/*=====================GULF COAST===================*/
+makeChart('GulfCoast_Pop', 'Population (10 millions)', 1.66, 1.78);
+makeChart('GulfCoast_Job', 'Job Growth (%)', 9.8, 15.5);
+makeChart('GulfCoast_GDP', 'GDP (trillions)', .85, 1.2);
 
-});
-var ctx = document.getElementById('SEMan').getContext('2d');
-var chart = new Chart(ctx, {
-  type: "bar",
-  data:{
-    labels: ["Population (10 million)", "Job Growth (%)", "GDP (trillions)"],
-    datasets: [{
-      label: "Current",
-      backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [6.12, 4.1, 2.4]
-      
-    },{
-      label: "Projected",
-      data: [6.43, 10.7, 3.1],
-      backgroundColor: "rgba(255,153,0,0.4)",
-    }]
-  },
-    options: {
-      scales: {
-    yAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    xAxes: [{
-        gridLines: {
-            display: false,
-            drawBorder: false,
-        }
-    }],
-    responsive: true,
-}
-    }
 
-});
+/*=====================SE MAN===================*/
+makeChart('SEMan_Pop', 'Population (10 millions)', 6.12, 6.43);
+makeChart('SEMan_Job', 'Job Growth (%)', 4.1, 10.7);
+makeChart('SEMan_GDP', 'GDP (trillions)', 2.4, 3.1);
+
+

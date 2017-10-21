@@ -1,4 +1,13 @@
 #container{
-	height: 500px;
-	width: 750px;
+	height: 200vh;
+
 }
+
+.charts  {
+	
+	height: 10vh;
+	width: 30vw;
+	padding-bottom: 80vh ;
+	float: left;
+}
+
