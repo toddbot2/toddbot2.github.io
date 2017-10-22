@@ -1,13 +1,15 @@
 #container{
-	height: 200vh;
+	height: 120vh;
 
 }
 
-.charts  {
+.charts div {
 	
-	height: 10vh;
-	width: 30vw;
-	padding-bottom: 80vh ;
+	width:32vw;
 	float: left;
+}
+
+.clear{
+	clear: both;
 }
 

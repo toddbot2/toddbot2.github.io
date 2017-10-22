@@ -253,6 +253,14 @@ function makeChart(id, label, currentData, projectedData) {
       }]
     },
       options: {
+        plugins: {
+          deferred: {           // enabled by default
+            
+              yOffset: '50%',   // defer until 50% of the canvas height are inside the viewport
+              delay: 1000        // delay of 500 ms after the canvas is considered inside the viewport
+          },
+        },
+
         scales: {
       yAxes: [{
         ticks: {
@@ -268,9 +276,15 @@ function makeChart(id, label, currentData, projectedData) {
               display: false,
               drawBorder: false,
           }
+
       }],
 
+
   }
+
+
+
+
       }
 
   });
@@ -282,8 +296,6 @@ makeChart('GreatLakes_GDP', 'GDP (trillions)', 2.6, 3.2);
 
 
 /*=====================INLAND WEST===================*/
-/*makeChart("InlandWest", "Population (10 millions")
-*/
 makeChart('InlandWest_Pop', 'Population (10 millions)', 3.23, 3.46);
 makeChart('InlandWest_Job', 'Job Growth (%)', 8.8, 14.6);
 makeChart('InlandWest_GDP', 'GDP (trillions)', 1.3, 1.8);
@@ -306,4 +318,5 @@ makeChart('SEMan_Pop', 'Population (10 millions)', 6.12, 6.43);
 makeChart('SEMan_Job', 'Job Growth (%)', 4.1, 10.7);
 makeChart('SEMan_GDP', 'GDP (trillions)', 2.4, 3.1);
 
+/*======================JQUERY APPEAR================*/
 
