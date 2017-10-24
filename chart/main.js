@@ -1,17 +1,18 @@
 /*=======================PACIFIC COAST======================*/
-var ctx = document.getElementById('PacificCoast_Job').getContext('2d');
+
+var ctx = document.getElementById('PacificCoast_Pop').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Job Growth (%)"],
+    labels: ["Population (10 million)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [ 5.3]
+      data: [1.89]
       
     },{
       label: "Projected",
-      data: [1.21],
+      data: [1.99],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
@@ -38,19 +39,19 @@ var chart = new Chart(ctx, {
 
 });
 
-var ctx = document.getElementById('PacificCoast_Pop').getContext('2d');
+var ctx = document.getElementById('PacificCoast_Job').getContext('2d');
 var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels: ["Population (10 million)"],
+    labels: ["Job Growth (%)"],
     datasets: [{
       label: "Current",
       backgroundColor: "rgba(0, 0, 255, .4)",
-      data: [1.89]
+      data: [ 5.3]
       
     },{
       label: "Projected",
-      data: [1.99],
+      data: [12.2],
       backgroundColor: "rgba(255,153,0,0.4)",
     }]
   },
