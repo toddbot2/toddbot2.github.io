@@ -10,8 +10,10 @@ body{
 
 
 }
-.container a{
-	justify-content: center;
+ a{
+ 	display: flex;
+	justify-content: space-around;
+
 }
 
 .container	{
