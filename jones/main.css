@@ -25,7 +25,9 @@ body{
 
 }
 
-/*.fucker{
+.fucker{
 	display: flex;
 	justify-content: center;
-}*/
+	color: white;
+	font-size: 1.3em;
+}
