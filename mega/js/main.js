@@ -54,7 +54,7 @@ var Navigation = $(".sec-nav");
     Header = $('#intro2').height();
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > Header +1100) {
+  if( $(this).scrollTop() > Header +1090) {
     Navigation.addClass(stickyDiv);
   } else {
     Navigation.removeClass(stickyDiv);
