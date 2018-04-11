@@ -134,7 +134,7 @@ h2{
   font-family: 'catamaran', sans-serif;
 
   font-size:30px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #FFF4CF;
 }
 h1{
@@ -146,9 +146,9 @@ h1{
   color: #FCF1CD;
   letter-spacing: .2em;
 }
-.title h1{
+/*.title h1{
    text-shadow: -2px 5px 3px rgba(43, 39, 53, .7);
-}
+}*/
 
 .title-hover{
   font-size: 1.2em;
