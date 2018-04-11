@@ -282,6 +282,10 @@ cursor: pointer;
   
 }
 
+#header-start p{
+  line-height: 1px;
+}
+
 #small{
   font-size: 1.2rem;
 }
