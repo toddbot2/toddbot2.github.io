@@ -58,7 +58,8 @@ body {
   padding: 0 30%;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-family: "quicksand";
+  font-family: "catamaran";
+  font-weight: 100;
   color: #E5DBB8;
   background-color: black;
 }
@@ -128,13 +129,14 @@ p{
   color: #FFF4CF;
 }
 h2{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'catamaran', sans-serif;
+  
   font-size:30px;
   text-transform: uppercase;
   color: #FFF4CF;
 }
 h1{
-  /*font-family: 'Quicksand', sans-serif;*/
+  /*font-family: 'catamaran', sans-serif;*/
  font-family: 'Rhodium Libre', serif;
   font-size:2.5em;
   text-transform: uppercase;
@@ -148,12 +150,13 @@ h1{
 
 .title-hover{
   font-size: 1.2em;
-  font-family: "Quicksand";
+  font-family: "catamaran";
+  font-weight: 100;
   color: #E5DBB8;
   background-color: black;
 }
 	 nav {/*position: fixed*/;width: 100%; /*height: 60px*/; left:0px; z-index: 100; background: #020202; padding-top:30px;}
-	 nav a {display:block; width:150px; text-align:center; float: left; color: #E5DBB8; font-family: 'Quicksand', sans-serif;}
+	 nav a {display:block; width:150px; text-align:center; float: left; color: #E5DBB8; font-family: 'catamaran', sans-serif;}
 	img {width:103%; height: auto;} 
 	 /*css grid stuff here*/
 section {
@@ -209,7 +212,8 @@ section {
 }
 
 .title-info:hover{
-  font-family: "quicksand";
+  font-family: "catamaran";
+font-weight: 100;
   font-size: 2em;
   background-color: black;
 }
@@ -424,7 +428,8 @@ footer{
   height: 150px;
   background-color: black;
   color: #E5DBB8;
-  font-family: "Quicksand";
+  font-family: "catamaran";
+font-weight: 100;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -435,7 +440,8 @@ footer p{
   font-size: 1rem;
   padding: 0;
   margin: 7px 0;
-  font-family: "Quicksand";
+  font-family: "catamaran";
+font-weight: 100;
 
 }
 
@@ -518,7 +524,8 @@ section {
   padding: 13%;
   font-size: 1rem;
   line-height: 1.3;
-  font-family: "quicksand";
+  font-family: "catamaran";
+font-weight: 100;
   color: #E5DBB8;
   background-color: black;
 }
@@ -578,7 +585,8 @@ footer p {
     font-size: .7rem;
     padding: 0;
     margin: 7px 0;
-    font-family: "Quicksand";
+    font-family: "catamaran";
+font-weight: 100;
     text-align: center;
 }
 .intro-lead{
@@ -595,7 +603,8 @@ footer p {
     font-size: .7rem;
     padding: 0;
     margin: 7px 0;
-    font-family: "Quicksand";
+    font-family: "catamaran";
+font-weight: 100;
     text-align: center;
 }
 
@@ -611,7 +620,8 @@ footer p {
   padding: 13%;
   font-size: .9rem;
   line-height: 1.3;
-  font-family: "quicksand";
+  font-family: "catamaran";
+font-weight: 100;
   color: #E5DBB8;
   background-color: black;
 }
