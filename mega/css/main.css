@@ -1,0 +1,759 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+  /*overflow-x: hidden;*/ /*WHY DIS BREAK!??!!?*/
+}
+body {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#79d7db+0,f9ead7+100 */
+/*background: #79d7db; /* Old browsers */
+/*background: -moz-linear-gradient(top, #79d7db 0%, #f9ead7 100%); /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top, #79d7db 0%,#f9ead7 100%); /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom, #79d7db 0%,#f9ead7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79d7db', endColorstr='#f9ead7',GradientType=0 ); /* IE6-9 */
+/*
+  background: linear-gradient(#79d7db, #f9ead7);
+  height:100%;*/
+  margin:0;
+  overflow-x: hidden;
+
+}
+#nav{
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+
+
+.hidden{
+  display: none;
+}
+.intro-lead{
+  height: 100vh;
+  font-size: 3rem;
+  color: #E5DBB8;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#intro{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding: 0 30%;*/
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-family: 'Rhodium Libre', serif;
+  color: #E5DBB8;
+  background-color: black;
+}
+
+.white {
+  color:white;
+}
+
+#intro2{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "catamaran";
+  font-weight: 100;
+  color: #E5DBB8;
+  background-color: black;
+}
+
+
+.intro-bulk{
+  display: flex;
+  background-color: black;
+  
+}
+
+/*====================nav==============*/
+.sec-nav.sticky {
+  width: 100%;
+  position:fixed;
+  top:0;
+}
+
+.sec-nav {
+  height:auto;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  /*position: fixed;*/
+  z-index: 999;
+  transition: height .6s;
+  
+ /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;*/
+  /*box-shadow: 0px 0px 5px #333;*/
+  background-color: black;
+}
+/*.sec-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: black;
+}*/
+
+.sec-nav a{
+  
+  padding:0 20px;
+  text-decoration: none;
+  background-color: #08070a;
+}
+
+.sec-nav a:hover {
+  background-color: #3d384c;
+}
+
+.sec-nav p{
+  text-align: center;
+  color: #E5DBB8;
+}
+
+/*======================MAP=======================*/
+#map{
+  /*padding-top: 50px;*/
+  padding-bottom: 8%;
+  position: relative;
+
+}
+
+#map svg{
+  transform: scale(.8);
+}
+
+body, html {
+    height: 100%;
+}
+.main {
+	height: auto;
+}
+#container{
+ /* background: linear-gradient(#79d7db, #f9ead7);*/
+  width: 100%;
+  /*height:2000px;*/
+}
+p{
+  font-family: 'catamaran', sans-serif;
+  font-size: 15px;
+  color: #FFF4CF;
+  letter-spacing: .1em;
+  line-height: 1.35em;
+}
+h2{
+  font-family: 'catamaran', sans-serif;
+
+  font-size:30px;
+  /*text-transform: uppercase;*/
+  color: #FFF4CF;
+}
+h1{
+  /*font-family: 'catamaran', sans-serif;*/
+ font-family: 'Rhodium Libre', serif;
+  font-size:2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FCF1CD;
+  letter-spacing: .2em;
+}
+/*.title h1{
+   text-shadow: -2px 5px 3px rgba(43, 39, 53, .7);
+}*/
+
+.title-hover{
+  font-size: 1.2em;
+  font-family: "catamaran";
+  font-weight: 100;
+  color: #E5DBB8;
+  background-color: black;
+}
+	 nav {/*position: fixed*/;width: 100%; /*height: 60px*/; left:0px; z-index: 100; background: #020202; padding-top:30px;}
+	 nav a {display:block; width:150px; text-align:center; float: left; color: #E5DBB8; font-family: 'catamaran', sans-serif;}
+	img {width:103%; height: auto;} 
+	 /*css grid stuff here*/
+section {
+  display: grid;
+        /*background: linear-gradient(#f9ead7, #79d7db, #f9ead7);*/
+    /*padding-top:80px; border-bottom: thin grey solid;*/
+  height: 100%; /*background: #f2f2f2;*/
+  /*grid-gap: 2px;*/
+  grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col4-start] 1fr [col5-start] 1fr [col6-end] 1fr;
+  /* grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];*/
+	grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr [row4-end] auto /*[row4-end] 1fr*/;
+        /*background-color: #fff;*/
+  /*max-height:1000px;*/
+  background-image: url(img/hero-megaregions-svg-03.svg);
+}
+
+.region{
+  transition: all .7s;
+}
+
+canvas {
+	height: 25vh;
+    display: block;
+    width: auto;
+}
+
+.expand{
+  display: all;
+}
+
+/*========================THIS MIGHT NOT WORK================================*/
+/*.tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #f2f2f2 ;
+    border-radius: 5px;
+    padding: 10px;
+    color: #333;
+    }*/
+/*========================END WORKs================================*/    
+/*.region:hover{
+  transform: scale(1.1);
+
+}*/
+
+/*section img{
+  width: 100%;
+  z-index: 2;
+  bottom: 0;
+}*/
+.space{
+  grid-row: 5/6;
+  grid-column:1/7;
+  background-color: pink;
+  z-index: 9;
+  height: 100px;
+}
+#Layer_1 {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.title-info:hover{
+  font-family: "catamaran";
+font-weight: 100;
+  font-size: 2em;
+  background-color: black;
+}
+
+#map {
+  background: linear-gradient(#4a8484, #6bbfbf);
+  display: block;
+  
+}
+#pc {
+  background: linear-gradient(#6bbfbf, #b7d885);
+}
+
+#iw {   background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(234, 110, 207,
+1)); }
+
+#gp {
+  background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(229, 191, 72, 1));
+}
+
+#gl {
+  background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(76, 218, 229, 1));
+}
+
+#smb {
+  background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(232, 135, 84, 1));
+}
+
+#gc {
+  background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(88, 210, 198, 1));
+}
+
+#gn {
+  background: linear-gradient( rgba(64, 57, 79, 1)0%,rgba(190, 168, 221, 1));
+}
+
+
+path{
+	/*stroke:#D7403E;*/
+	stroke-width: 1px;
+	transition: 0.2s ease;
+}
+
+path:hover, circle:hover {
+/*stroke: #7CCCBF !important;*/
+stroke-width:2px;
+stroke-linejoin: round;
+fill: orange !important;
+cursor: pointer;
+/*transform: scale(1.4);*/
+}
+
+#header-start{
+  height: 25vh;
+  background-color: black;
+  color: #E5DBB8;
+  text-align: center;
+  line-height: 1px;
+  
+}
+
+#header-start p{
+  line-height: 1px;
+}
+
+#small{
+  font-size: 1.2rem;
+}
+
+#header-start p{
+  padding-top: 20px;
+  margin-top: 0;
+  font-family: 'Rhodium Libre', serif;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: .2em;
+  
+}
+
+#clouds{
+
+  position: absolute;
+  margin-left:10vw;
+
+  z-index: 10;
+  -webkit-animation-duration:8s;
+  -webkit-animation-delay:0s;
+  -webkit-animation-iteration-count: infinite;
+
+}
+
+#clouds img{
+  
+  height: 30vh;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.title {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /*background-color: #e0f4a8;*/
+  /*height:30px;*/
+  text-align: center;
+/*  padding-top: 40%; Xio changed 4/11*/
+	padding-top: 10vh;
+  /*padding-bottom: 10%;*/
+}
+
+
+.hero {
+	grid-column-start: 1;
+	grid-column-end: 7;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	/*background-color: #e0f4a8;*/
+  /*max-height: 100px;*/
+/*  max-height: 180px; Xio 4/11*/
+  width: 100%;
+  margin: none;
+  z-index: 10;
+/*  position: absolute;
+  align-self: start;*/
+
+}
+
+.hero img{
+  align-items: start;
+  margin-left: -5px;
+margin-bottom: -6px;
+    width: 102%;
+}
+
+.logo {
+  text-align:center;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	/*background-color: #bace8d;*/
+}
+.logo h2{
+  letter-spacing: .2em;
+  color: #363038;
+}
+.logo img{
+  width:70%;
+}
+.data-copy {
+
+}
+.data {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	/*background-color:#bace8e;*/
+}
+.data img{
+  width:60%;
+}
+
+.text {
+/*	grid-column-start: 1; Xio changed 4/11*/
+	grid-column-start:2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+/*	background-color: #bace8f;*/
+/*  padding: 0% 10% 0% 24%; Xio changed 4/11*/
+  line-height: 1.3em;
+/*	max-width:450px; Xio changed 4/11*/
+}
+
+.text p{
+	max-width: 450px;
+}
+
+#us-map{
+
+}
+/*====================THIS MIGHT BE GARBAGE===============*/
+.tooltip {
+display:none;
+position:absolute;
+border: solid 2px #E5DBB8;
+/*border:2px solid #d1c781;*/
+background-color: #3a350c;
+padding:10px;
+color: #E5DBB8;
+font-family: 'Rhodium Libre', serif;
+/*text-transform: uppercase;*/
+    font-weight: 500;
+    letter-spacing: .3em;
+    font-size: 1em;
+}
+/*path:hover, circle:hover {
+  stroke: #d1c781 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #002438 !important;
+  cursor: pointer;
+}*/
+/*#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}*/
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  
+  border-radius: 5px;
+  padding: 50px;
+ font-family: 'Rhodium Libre', serif;
+text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    letter-spacing: .3em;
+    font-size: 1em;
+
+}
+.hamburger{
+    display:none;
+  }
+
+
+/*====================END GARBAGE=================*/
+#working:hover{
+
+}
+
+footer{
+  display: flex;
+  height: 150px;
+  background-color: black;
+  color: #E5DBB8;
+  font-family: "catamaran";
+font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+footer p{
+  font-size: 1rem;
+  padding: 0;
+  margin: 7px 0;
+  font-family: "catamaran";
+font-weight: 100;
+
+}
+/*Xio took a bunch of shit out 4/11*/
+img {width:100%; height: auto;} 
+
+/*section{
+  max-height:84vh;
+}
+*/
+
+@media (max-width: 1800px) {
+
+
+#clouds{
+  margin-left:10vw;
+}
+  #clouds img{
+    width: 30vw;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  
+  #clouds{
+    margin-left:10vw;
+
+}
+
+  #clouds img{
+    width: 20vw;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 935px) {
+.hamburger{
+   display: flex;
+   justify-content: flex-end;
+   border: none;
+   background-color: black;
+   color:#E5DBB8;  
+   margin-right: 30px;
+   border-bottom: 30px;
+   font-size:2em;
+   font-family: "catamaran";
+  }
+.ham-wrap{
+  background-color: black;
+}
+
+
+  #button-cont{
+    background-color: black;
+  }
+/* Xio changed this 4/11
+.hero {
+  display: none;
+}
+*/
+section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.sec-nav {
+  height: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.sec-nav a {
+  height:0;
+  background: none;
+  padding:0;
+}
+
+.expand{
+  height: 500px;
+  width: 100%;
+  display: block;
+  position: relative;
+  transition:.6s;
+}
+.sec-nav p{
+  text-align: center;
+  color: #E5DBB8;
+  margin:0;
+  padding:2% 0% 2% 0%;
+}
+.sec-nav.sticky {
+  width: 100%;
+  position:relative;
+  top:0;
+}
+
+#intro2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13%;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-family: "catamaran";
+font-weight: 100;
+  color: #E5DBB8;
+  background-color: black;
+}
+#header-start p{
+  font-size: 2em;
+}
+/* Xio changed 4/11
+.data{
+  display: none;
+}
+*/
+.logo img{
+  max-width: 60%;
+  margin:auto;
+}
+.text{
+/*  padding:0% 17% 15% 15%; Xio changed 4/11*/
+  padding: 5%;/*added by Xio 4/11*/	
+  font-size: .9rem;
+   margin:auto;
+}
+.main {
+		height:auto;
+	}
+/*
+.main{
+  height: 113%;
+}
+*/
+.title {
+  padding-top: 5%;
+}
+h1{
+  font-size: 2rem;
+}
+
+#clouds{
+  margin-left: 12vw;
+}
+
+#clouds img{
+    width: 70vw;
+    height: auto;
+  }
+
+
+/*=====Xio added this class======*/	
+.data {
+	padding: 3vh 13vw 0vh 19vw;
+/*
+	margin:auto;
+	max-width: 9vw;
+*/
+	}
+}
+
+@media (max-width: 618px) {
+.logo img{
+  max-width: 100%;
+  margin:auto;
+}
+.text{
+  padding:0% 15% 6% 13%;
+  font-size: .6rem;
+  line-height: 1.1rem;
+}
+h1{
+  font-size: 1.7rem;
+}
+#header-start p{
+  font-size: 1em;
+}
+.main{
+  height: auto;
+}
+/*=====Xio deleted this======*/	
+/*
+  .hero {
+  display:none;
+}
+
+*/
+section {
+		display: flex;
+	}
+/* Xio deleted this because we are in flex not grid on mobile
+section {
+  grid-template-columns: 1fr;
+   grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  grid-template-rows: [row1-start] 1fr [row2-start] 1fr [row3-start] 1fr  [row4-end] 1fr;
+}
+*/
+footer p {
+    font-size: .7rem;
+    padding: 0;
+    margin: 7px 0;
+    font-family: "catamaran";
+font-weight: 100;
+    text-align: center;
+}
+.intro-lead{
+  font-size: 2rem;
+  height: 50vh;
+}
+}
+
+@media (max-width: 400px){
+  #header-start p{
+  font-size: 1.2em;
+}
+footer p {
+    font-size: .7rem;
+    padding: 0;
+    margin: 7px 0;
+    font-family: "catamaran";
+font-weight: 100;
+    text-align: center;
+}
+
+.text p{
+  font-size: .7rem;
+  line-height: 1.1rem;
+}
+#intro2 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13%;
+  font-size: .9rem;
+  line-height: 1.3;
+  font-family: "catamaran";
+font-weight: 100;
+  color: #E5DBB8;
+  background-color: black;
+}
+}
+
+
