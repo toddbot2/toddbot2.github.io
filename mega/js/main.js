@@ -48,7 +48,21 @@ var chart = new Chart(ctx, {
 
 });
 
-$(".sec-nav").stick_in_parent();
+
+
+
+
+
+if ( $(window).width() > 935) {
+  $(".sec-nav").stick_in_parent();
+}else{
+  $(".sec-nav").trigger("sticky_kit:detach");
+};
+
+
+
+
+
 
 /*var Navigation = $(".sec-nav");
     stickyDiv = "sticky";
