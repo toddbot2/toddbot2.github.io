@@ -310,16 +310,14 @@ cursor: pointer;
   
 }
 
-#header-start p{
-  line-height: 1px;
-}
-
 #small{
   font-size: 1.2rem;
 }
 
 #header-start p{
-  padding-top: 20px;
+  line-height: 1em;
+  margin-bottom: 0;
+  padding-top: 0;
   margin-top: 0;
   font-family: 'Rhodium Libre', serif;
   font-weight: bold;
