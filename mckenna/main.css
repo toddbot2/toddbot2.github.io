@@ -1,5 +1,7 @@
 
-
+body{
+	margin:0;
+}
 section{
 	margin: 10px 0;
 	font-size: 24px;
@@ -53,7 +55,7 @@ section{
 
 .movie video{
 	width: 100%;
-	min-height: 900px;
+	height: 100vh;
 }
 
 
@@ -138,6 +140,14 @@ section{
 	font-family:"open sans";
 }
 
+.no-marg, .no-marg p{
+	margin: 0;
+}
+
+.bot-marg{
+	margin-bottom: -4px;
+}
+
 #smaller{
 	font-size: 53px;
 	color: black;
@@ -190,4 +200,18 @@ section{
 #set-height {
 	display: block;
 	height: 1400px;
+}
+
+#footer{
+	height: 20vh;
+	background-color: black;
+	color:white;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction: column;
+}
+
+#footer p{
+
 }
