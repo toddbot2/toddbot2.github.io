@@ -1,0 +1,41 @@
+html{
+	background-color: black;
+	color: white;
+	height: 500vh;
+}
+section{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+
+}
+
+#container-box{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+
+}
+
+.box{
+	height: 350px;
+	width: 30%;
+	background-color: pink;
+	display: none;
+}
+
+#a{
+	right:30%;
+}
+
+#b{
+	right:60%;
+}
+
+#c{
+	right:90%;
+}
