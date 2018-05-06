@@ -25,17 +25,17 @@ section{
 	height: 350px;
 	width: 30%;
 	background-color: pink;
-	display: none;
+	opacity:1;
 }
 
 #a{
-	right:30%;
+	right:1vw;
 }
 
 #b{
-	right:60%;
+	right:;
 }
 
 #c{
-	right:90%;
+	right:68vw;
 }
