@@ -1,0 +1,144 @@
+/*============================FONTS==========================*/
+@font-face {
+    font-family: piersSans;
+    src: url(../fonts/PierSans-Black.otf);
+}
+
+@font-face {
+font-family: plantagenetCherokee;
+    src: url(../fonts/PlantagenetCherokee.ttf);
+}
+
+@font-face {
+font-family: baskerville;
+    src: url(../fonts/Baskerville Old Face);
+}
+
+section{
+	height: 120vh;
+	width: 100vw;
+	display: flex;
+	
+}
+
+h1{
+	font-size: 2em;
+	font-family: piersSans;
+	letter-spacing: .7em;
+}
+
+p{
+	font-family: baskerville;
+	line-height: 42px;
+
+}
+
+#nav{
+	height: auto;
+
+}
+
+#intro{
+	background: url("../img/bone-background.png");
+	background-size: cover;
+}
+
+
+#facts{
+	background-color: black;
+	color:white;
+	display: flex;
+	align-items:flex-start;
+	justify-content:center;	
+	height: 500vh;
+}
+
+.data{
+	height: 100px;
+	width: 100px;
+	background-color: pink;
+}
+
+#container-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#facts p{
+	font-size: 1.4em;
+	max-width: 32em;
+	margin: 0 auto;
+	margin-top: 15%;
+	line-height: 1.3em;
+}
+
+#solution, #intro{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+}
+
+
+
+
+.hero-text{
+	font-size: 1.5em;
+	letter-spacing: .1em;
+	max-width: 29em;
+	text-align: center;
+	margin: 0 auto;
+
+}
+
+.hero-text p{
+	line-height: 42px;
+}
+
+.tag{
+	font-size: 1.5em;
+	margin-top: 6%;
+}
+
+#about{
+
+}
+
+.name{
+	font-family: plantagenetCherokee;
+	height: 7vh;
+	letter-spacing: .5em;
+	font-size: 5em;
+
+}
+
+#wing-row{
+	margin-top: 5%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+#wing-row img{
+	height: 10vh;
+	opacity: .5;
+}
+
+#how-do{
+	flex-direction: column;
+	text-align: center;
+	line-height: 3em;	
+}
+
+#how-do h1{
+	margin-bottom: 6%;
+}
+
+#how-do h2{
+	font-size: 1.2em;
+}
+
+#about{
+
+}
