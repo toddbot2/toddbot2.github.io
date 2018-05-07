@@ -33,15 +33,16 @@ p{
 
 }
 
+video{
+	height: 100vh;
+}
+
 #nav{
 	height: auto;
 
 }
 
-#intro{
-	background: url("../img/bone-background.png");
-	background-size: cover;
-}
+
 
 #container-headline{
 	background-color: black;
@@ -97,6 +98,12 @@ p{
 	justify-content: center;
 	align-items:center;
 	flex-direction: column;
+}
+
+#intro{
+	/*background: url("../img/bone-background.png");
+	background-size: cover;*/
+	display: block;
 }
 
 
@@ -185,13 +192,6 @@ p{
 	right:20vw;
 }
 
-#container-box{
-	width: 100%;
-	display: flex;
-	flex-direction:row;
-	justify-content:space-around;
-
-}
 
 .box{
 	height: 350px;
@@ -213,6 +213,11 @@ p{
 	height: 0;
 	overflow: hidden;
 	transition:.4s;
+}
+
+.expand{
+	height: auto;
+	transition: .5s;
 }
 
 .hover:hover{
