@@ -1,7 +1,6 @@
-/*============================FONTS==========================*/
 @font-face {
     font-family: piersSans;
-    src: url(../fonts/PierSans-Black.otf);
+    src: url(../fonts/PierSans-Medium.otf);
 }
 
 @font-face {
@@ -14,213 +13,206 @@ font-family: baskerville;
     src: url(../fonts/Baskerville Old Face);
 }
 
-section{
-	height: 120vh;
+body{
+	margin: 0;
+	background-image: url('../img/texture.jpg');
 	width: 100vw;
-	/*display: flex;*/
+}
+
+section{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+p{
+	font-family: 'Libre Baskerville', serif;
+	font-size: .9em;
+    line-height: 1.4em;
+    letter-spacing: .04em;
+    max-width: 38em;
 	
 }
 
 h1{
-	font-size: 2em;
+	font-family: plantagenetCherokee;
+	letter-spacing: .3em;
+	font-size: 4em;
+	color: white;
+}
+
+h2 {
 	font-family: piersSans;
-	letter-spacing: .7em;
-}
-
-p{
-	font-family: baskerville;
-	line-height: 42px;
-
-}
-
-video{
-	height: 100vh;
-}
-
-#nav{
-	height: auto;
-
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-size: .9em;
 }
 
 
 
-#container-headline{
-	background-color: black;
-	color:white;
-	display: flex;
-	align-items:flex-start;
-	justify-content:flex-start;	
-	flex-direction: column;
-	width: 100vw;
+input{
+	width: 35em;
+}
+
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+
+li{
+	letter-spacing: .4em;
+	
+	font-size: .9em;
+	font-family: piersSans;
+	line-height: 4em;
 	text-align: center;
-	z-index: 0;
-
-}
-
-#container-box{
-	display: flex;
-	flex-direction:row;
-	width: 100%;
-	background-color: black;
-}
-#facts{
-	width: 100%;
-	height: 500vh;
-	display: block;
-	background-color:black;
-}
-
-.data{
-	height: 100px;
-	width: 100px;
-	background-color: pink;
-}
-
-#container-data{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-#facts p{
-	font-size: 1.4em;
-	max-width: 32em;
-	margin: 0 auto;
-	margin-top: .6vh;
-	line-height: 1.3em;
-	right:23.5vw;
-	margin-bottom: 360px;
-
-}
-
-#solution, #intro{
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	flex-direction: column;
+	color: #faf9ef
 }
 
 #intro{
-	/*background: url("../img/bone-background.png");
-	background-size: cover;*/
-	display: block;
-}
-
-
-#solution{
-	height: 85vh;
-}
-
-#explain{
-	height: 75vh;
-	padding-top: 30px;
-}
-
-#how-do{
-	border-top: solid 1px black;
-	padding-top: 30px;
-}
-
-
-.hero-text{
-	font-size: 1.5em;
-	letter-spacing: .1em;
-	max-width: 29em;
-	text-align: center;
-	margin: 0 auto;
-	border-top: black solid 1px;
-
-}
-
-.hero-text p{
-	line-height: 42px;
-}
-
-.tag{
-	font-size: 1.5em;
-	margin-top: 6%;
-}
-
-#about{
-
-}
-
-.name{
-	font-family: plantagenetCherokee;
-	height: 7vh;
-	letter-spacing: .5em;
-	font-size: 5em;
-
-}
-
-#wing-row{
-	margin-top: 5%;
+	height: 100vh;
 	display: flex;
-	flex-direction:row;
-	justify-content:space-between;
+	justify-content: center;
+	flex-direction:column;
+	align-items: center;
+	background-image: 
+		linear-gradient(rgba(13, 60, 92, 0.5), rgba(13, 60, 92, 0.5)),
+		url("../img/bg1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+
 }
 
-#wing-row img{
+#intro h2, #process p{
+	color: #faf9ef;
+}
+
+#nav{
+	height: 0;
+
+}
+
+#logo img{
 	height: 10vh;
-	opacity: .5;
+	position:fixed;
+	top: 5vh;
+	right:5vw;
+	color: black;
+
 }
 
-#how-do{
-	flex-direction: column;
-	text-align: center;
-	line-height: 3em;	
+.blend{
+	mix-blend-mode: screen;
+	
 }
 
-#how-do h1{
-	margin-bottom: 6%;
+#box-container{
+	width: 85vw;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
 }
 
-#how-do h2{
-	font-size: 1.2em;
-}
-
-#about{
+#box-container div{
 	display: flex;
 	flex-direction:column;
+	align-items:center;
+	width: 20vw;
+
+}
+
+#box-container p{
+	justify-content: flex-end;
+	text-align: left;
+}
+
+#box-container img{
+
+	width: 20vw;
+	height: auto;
+	
+}
+
+#approach{
+	height: 40vh;
+	/*background-color: black;*/
+	
+	background-image: url('../img/hands.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+
+#image-wrapper{
+	display: flex;
+	flex-direction: row;
+	/*background-image: url('../img/bug.png');
+	background-position-x: left;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	background-size: 400px;*/
+}
+
+#image-wrapper div{
+	width: 50vw;
+	height: 70vh;
+
+}
+
+#left{
+	display: flex;
 	justify-content: center;
-	text-align: center;
-	position: fixed;
-	width: 100%;
+	align-items: center;
+	
 }
 
-#about-intro{
-	right:20vw;
-}
-
-
-.box{
-	height: 350px;
-	width: 30%;
-	background-color: pink;
-	opacity:1;
-}
-
-#a{
-	right:68vw;
+#bug{
+	position: absolute;
+	left: 0;
+	top:323vh;
 }
 
 
-#c{
-	right:1vw;
+#process{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background-color: #0c3b5b;
+
 }
 
-.accord{
-	height: 0;
-	overflow: hidden;
-	transition:.4s;
+#list-title, #process h2{
+	color: #faf9ef;
 }
 
-.expand{
-	height: auto;
-	transition: .5s;
+#process img{
+	width: 27.5vw;
 }
 
-.hover:hover{
-	height: auto;
+#who{
+	display: flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	background-image: url('../img/wing.png');
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+
 }
 
+#who div{
+	margin: 10%;
+	display: flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+
+#footer{
+	background-color: #0c3b5b;
+	height: 20vh;
+	
+}
