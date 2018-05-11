@@ -1,0 +1,503 @@
+@font-face {
+    font-family: piersSans;
+    src: url(../fonts/PierSans-Medium.otf);
+}
+
+@font-face {
+font-family: plantagenetCherokee;
+    src: url(../fonts/PlantagenetCherokee.ttf);
+}
+
+@font-face {
+font-family: baskerville;
+    src: url(../fonts/Baskerville Old Face);
+}
+
+
+body{
+	margin: 0;
+	/*background-image: url('../img/bone-texture-nofill.png');*/
+	background-color: #faf9ef;
+	width: 100vw;
+	/*background-size: contain;
+	mix-blend-mode: multiply;*/
+}
+
+#blend-body {
+	background-image: 
+		linear-gradient(rgba(249, 246, 241, .5), rgba(249, 246, 241, .5)),   url(../img/bone-texture-nofill.png);
+	background-size: contain;
+}
+/*--------------------particle experiment--------------*/
+#container {
+    overflow:hidden;
+    position:absolute;
+    z-index: 2;
+}
+#pixie {
+    z-index:0;
+    opacity: .5;
+   /* background:-moz-linear-gradient(top, #040429, #257eb7);*/
+   /* background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#040429), color-stop(100%,#257eb7));*/
+}
+
+
+section{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media print {
+  p {
+    orphans: 3;
+  }
+}
+
+p {
+	/*font-family: 'Libre Baskerville', serif;
+	font-size: .9em;
+    line-height: 1.4em;
+    letter-spacing: .04em;
+    max-width: 34em;*/
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+    max-width: 36em;
+    text-align: center;
+	widows: 2;
+}
+
+#quote {
+	display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-self: flex-start;
+    max-width: 48em;
+    margin-left: 9vw;
+}
+#quote p{
+	font-family: plantagenetCherokee;
+	font-size: 3rem;
+	line-height: 1.3em;
+	color: rgba(13, 60, 92, 0.6);
+	text-align: right;
+	font-family: 'Libre Baskerville', serif;
+	margin-left: 20vw;
+	margin-top: 1vh;
+}
+
+q {
+    quotes: '\201C' '\201D' '\2018' '\2019';
+    font-family: plantagenetCherokee;
+	font-size: 7rem;
+	text-align: left;
+	line-height: 1.3em;
+	display: inline;
+	text-indent: -.9em;
+	color: rgba(13, 60, 92, 0.6);
+	letter-spacing: .01em;
+ }
+ 
+q:before { 
+content: '\201C'; 
+font-size: 8rem;
+/*font-size:350%;
+font-family: Times New Roman; 
+padding-right: 10px; */
+
+} 
+q:after { 
+content: '\201D'; 
+font-size: 8rem;
+/*font-size:350%; 
+padding-left: 20px;
+
+font-family: Times New Roman; */
+}
+
+.gigantic {
+margin-top: -16px; 
+height: auto; 
+font-size:2em; 
+}
+
+.cta{
+	margin-top: 7vh;
+	max-width: 30em;
+	border:none;
+	letter-spacing: .12em;
+	/*text-transform: none;*/
+	/*font-family: plantagenetCherokee;*/
+	/*letter-spacing: .2em;*/
+
+}
+.caption p{
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.4em;
+	max-width: 16em;
+	hyphens: auto;
+}
+
+h1{
+	font-family: plantagenetCherokee;
+	letter-spacing: .3em;
+	font-size: 4em;
+	color: white;
+}
+
+h2 {
+	font-family: piersSans;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-weight: lighter;
+    border-bottom: 3px solid rgba(13, 60, 92, 0.8);
+    color: rgba(13, 60, 92, .9);
+}
+
+
+ul{
+	text-decoration: none;
+	list-style: none;
+}
+
+li{
+	letter-spacing: .4em;
+	
+	font-size: .9em;
+	font-family: piersSans;
+	line-height: 4em;
+	text-align: center;
+	color: #faf9ef;
+}
+#submit{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: center;*/
+}
+
+input{
+	width: 20em;
+	border: 3px solid rgba(13, 60, 92, 0.8);
+	margin-right: 1vw;
+}
+
+button{
+	 color:#faf9ef;
+	 background-color: rgba(13, 60, 92, 1);
+	 height: auto;
+	 border:none;
+	 font-family: piersSans;
+	 text-transform: uppercase;
+	 letter-spacing: .1em;
+}
+
+#intro{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction:column;
+	align-items: center;
+	background-image: 
+		linear-gradient(rgba(13, 60, 92, 0.8), rgba(249, 246, 241, 0.4)),   url(../img/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+#intro h2{
+	color: #faf9ef;
+    font-size: 1.8em;
+    letter-spacing: .2em;
+    max-width: 30em;
+    text-align: center;
+    text-shadow: 2px 3px 5px rgba(13, 60, 92, 0.5);
+    padding: 1%;
+    border: none;
+    /*border: 3px solid rgba(13, 60, 92, 0.8);*/
+   /* background-color: rgba(13, 60, 92, 0.3);*/
+
+}
+
+
+#process p{
+	color: #faf9ef;
+   /* max-width: 35em;
+    text-align: center;
+    font-size: .9em;*/
+    max-width: 38em;
+}
+
+#nav{
+	height: 0;
+
+}
+#impact{
+	justify-content: flex-start;
+	height: 116vh;
+}
+
+#logo img{
+	height: 10vh;
+	position:fixed;
+	top: 5vh;
+	right:5vw;
+	color: black;
+	z-index: 10;
+	transition: all .2s ease-in-out;
+
+}
+#logo img:hover{
+	/*color:red;
+	mix-blend-mode: normal;*/
+	transform: scale(1.1);
+}
+#logo-footer{
+	width: 20vw;
+}
+#logo-footer img{
+	width: 15vw;
+	/*position:fixed;
+	top: 5vh;
+	right:5vw;*/
+	align-self: flex-start;
+	color: black;
+	z-index: 10;
+	transition: all .2s ease-in-out;
+
+}
+#logo-footer img:hover{
+	/*color:red;
+	mix-blend-mode: normal;*/
+	transform: scale(1.1);
+}
+.cats {
+	width: 20vw;
+}
+
+.blend{
+	mix-blend-mode: screen;
+	
+}
+
+#box-container{
+	width: 85vw;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+#box-container div{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	width: 20vw;
+	margin-top: 8vh;
+
+}
+
+#box-container p{
+	justify-content: flex-end;
+	text-align: left;
+	margin-left: 1vw;
+}
+
+#box-container img{
+
+	/*width: 20vw;*/
+	width: 16vw;
+	height: auto;
+	padding-bottom: 3vh;
+	
+}
+
+#approach{
+	height: 65vh;
+	/*height: 40vh;*/
+	/*background-color: black;*/
+	
+	/*background-image: url('../img/hands.png');
+	background-repeat: no-repeat;
+	background-size: 73vw;
+	background-position: bottom right;*/
+	justify-content: flex-start;
+	text-align: center;
+	/*height: 85vh;*/
+}
+
+#approach h2{
+	padding-top: 12vh;
+}
+
+#approach p{
+	padding-top: 15vh;
+	/*font-family: plantagenetCherokee;
+	font-size: 1.4em;*/
+    max-width: 27em;
+    font-size: 1.6em;
+}
+
+#approach img{
+	height: 13vh; margin-top: 13vh; margin-bottom: 1vh; margin-right:3vw;
+}
+
+#cycle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	padding: 7vh;
+}
+
+
+
+#image-wrapper{
+	display: flex;
+	flex-direction: row;
+	/*background-image: url('../img/bug.png');
+	background-position-x: left;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	background-size: 400px;*/
+}
+
+#image-wrapper div{
+	width: 50vw;
+	height: 70vh;
+	margin-top: 7vh;
+
+}
+
+#left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bug{
+	position: absolute;
+    left: 0;
+    top: 498vh;
+    width: 40vw;
+}
+#hands {
+	position: absolute;
+	right: 0;
+	top: 148vh;
+    width: 75vw;
+}
+#wing{
+	    position: absolute;
+    right: -59px;
+    top: 630vh;
+    width: 34vw;
+    z-index: -2;
+}
+
+/*#process-intro {
+	height: 50vh;
+	background-color: #0c3b5b;
+	color: #faf9ef;
+}*/
+#team img{
+	/*background-image: url(../img/team.jpg);*/
+	border-radius: 300px;
+    width: 17vw;
+    height: auto;
+}
+#process{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	/*background-color: #0c3b5b;*/
+	height: 151vh;
+	background-image: 
+		linear-gradient(rgba(13, 60, 92, 0.8), rgba(13, 60, 92, 0.8)),   url(../img/dandilion.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	/*background: linear-gradient(rgba(13,60,92,1), rgba(13,60,92,.7), rgba(13,60,92,.3), rgba(3,60,92,0));
+	height: 120vh;*/
+
+}
+
+#list-title, #process h2{
+	color: #faf9ef;
+	border-bottom: 3px solid #faf9ef;
+}
+
+#process img{
+	width: 35.5vw;
+}
+
+#who{
+	/*height: 150vh;*/
+	/*display: flex;
+	flex-direction:column;
+	justify-content:center;*/
+	/*background-image: url('../img/wing2.png');*/
+	/*background-size: 30%;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;*/
+	/*margin-top: vh;*/
+
+}
+#we {
+	height: 130vh;
+}
+#we h2{
+	padding-top: 4vh;
+}
+
+#team{
+	/*margin: 10%;*/
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	
+}
+#who h2, p{
+	text-align: center;
+}
+
+#footer{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-evenly;*/
+	background-color: #0c3b5b;
+	max-height: 40vh;
+	
+}
+
+.cd-nav-trigger{
+	background-color: rgba(13, 60, 92, 0.8);
+}
+
+.cd-nav-trigger .cd-nav-icon{
+	color:#faf9ef;
+}
+.cd-nav{
+	background-color: rgba(13, 60, 92, 1);
+}
+.cd-half-block li{
+	font-family: piersSans;
+	color:#faf9ef;
+	text-transform: uppercase;
+}
