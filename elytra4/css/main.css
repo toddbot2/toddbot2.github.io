@@ -501,3 +501,92 @@ button{
 	color:#faf9ef;
 	text-transform: uppercase;
 }
+
+
+
+
+/*==============TODD'S PASTED GARBAGE================*/
+.box{
+	height: 1.2em;
+	width: 1.2em;
+	background-color: blue;
+	border: black 1px solid;
+	position: absolute;
+	transition: .5s;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size: 3em;
+}
+
+.box:hover{
+	background-color: yellow;
+}
+
+#one{
+	top: 470vh;
+	right: 48vw;
+	/*left: 45vw;*/
+}
+
+#two{
+	top: 484vh;
+	left: 37vw;
+}
+
+#three{
+	top: 484vh;
+	right: 37.5vw;
+}
+
+#four{
+	top: 504vh;
+	left: 37vw;
+}
+
+#five{
+	top: 504vh;
+	right: 37.5vw;
+}
+
+#six{
+	bottom: -425vh;
+	right: 50vw;
+	left: 48vw;	
+}
+
+.one, .two, .three, .four, .five, .six{
+	display: none;
+
+}
+
+#text-cont{
+	position: absolute;
+	width: 10em;
+	top: 450vh;
+	left: 42vw;
+	text-align: center;
+}
+
+.hovered{
+	display: block;
+	position: absolute;
+	/*top: 18vh;
+	left: 30vw;*/
+}
+
+
+/*circle.circ{
+	fill: red;
+	transition:.5s;
+}*/
+
+circle.circ:hover{
+	fill:blue;
+	transition:.4s;
+}
+
+.st2:hover{
+	fill:#1aefef;
+}
+

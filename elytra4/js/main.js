@@ -37,6 +37,27 @@ jQuery(document).ready(function($){
 
 });
 
+/*=================HOVER 4 TEXT BY TODD=================*/
+
+
+let numbers = ['one', 'two', 'three', 'four', 'five', 'six'];
+for (var i = 0; i < numbers.length; i++) {
+    let number = numbers[i];
+    $('#' + number).mouseover(function(){
+        let nav = $('.' + number);
+        nav.addClass("hovered")
+        console.log("mousein")
+    });
+    $('#' + number).mouseout(function(){
+        let nav = $('.' + number);
+        nav.removeClass("hovered")
+        console.log("mouseout")
+    });
+}
+
+/*========================END TODD'S GARBAGE========================*/
+
+
 // this is particle js
 var WIDTH = window.innerWidth,
     HEIGHT = window.innerHeight,
