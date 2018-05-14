@@ -391,7 +391,7 @@ button{
 #bug{
 	position: absolute;
     left: 0;
-    top: 498vh;
+    top: 506vh;
     width: 40vw;
 }
 #hands {
@@ -556,23 +556,36 @@ button{
 }
 
 .one, .two, .three, .four, .five, .six{
-	display: none;
-
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	transition: 0s, opacity .4s ease-in-out;
 }
 
 #text-cont{
 	position: absolute;
 	width: 10em;
-	top: 450vh;
-	left: 42vw;
+	top: 453vh;
+	left: 43vw;
 	text-align: center;
 }
 
 .hovered{
-	display: block;
+	visibility: visible;
 	position: absolute;
+	opacity: 1;
+	transition: opacity .4s ease-in-out;
+
 	/*top: 18vh;
 	left: 30vw;*/
+}
+
+#text-cont .one{
+	width: 15em;
+}
+
+#text-cont .five{
+	left:-2vw;
 }
 
 
@@ -581,12 +594,13 @@ button{
 	transition:.5s;
 }*/
 
-circle.circ:hover{
-	fill:blue;
+.icon:hover{
+	fill:#b79922;
 	transition:.4s;
 }
 
-.st2:hover{
-	fill:#1aefef;
+.title{
+	border-bottom: solid 1px #faf9ef;
 }
+
 
