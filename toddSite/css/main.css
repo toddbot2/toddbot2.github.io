@@ -1,0 +1,116 @@
+.gallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row{
+	display: flex;
+
+}
+
+.row div{
+	
+	width: 50vw;
+	height: 40vw;
+	/*margin: 20px;*/
+	border: 1px solid black;
+	transition: opacity .1s;
+}
+
+.row div:hover{
+	opacity: .9;
+	transition: opacity .1s
+}
+
+#nav-top{
+	height: 10vh;
+	width: 100%;
+	background-color: white;
+	
+	
+}
+
+.headline{
+	width: 8em;
+	line-height: 1.3em;
+	/*font-family:*/ 
+	font-size: 1.6em;
+	color:#d7dfed;
+    display: none;
+    text-align: center;
+}
+
+.reveal{
+	display: block;
+}
+
+.work{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.picture{
+	width: 160%;
+	height:auto;
+	transform: rotate(90deg);
+}
+
+.one{
+	background-color: red;
+	margin: 12.5px 12.5px 12.5px 25px;
+}
+
+.two{
+	background-color: blue;
+	margin: 12.5px 25px 12.5px 12.5px;
+}
+
+.one.alpha, .two.alpha{
+	margin-top:25px;
+	
+}
+
+div.one.omega{
+	width: 47vw;
+}
+
+.one.omega, .two.omega{
+	margin-bottom: 25px;
+}
+
+#footer{
+ 	height: 10vh;
+ 	position: absolute;
+ 	background-color: gray;
+ 	width: 100%;
+}
+
+@media (max-width: 1025px){
+	.row{
+		margin: 0 auto;
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*width: 80vw;*/
+		/*height: 50vw;*/
+	}
+	.row div{
+		margin: 25px;
+		width: 90vw;
+		height: 65vw;
+
+	}
+
+	div.one.omega{
+		width: 90vw;
+	}
+
+	.one, .two, .one.omega, .two.omega, .one.alpha, .two.alpha{
+		/*width: 100%;
+		margin: 25px;*/
+
+	}
+}
