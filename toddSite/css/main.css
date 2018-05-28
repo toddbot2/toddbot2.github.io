@@ -1,3 +1,5 @@
+
+
 .gallery{
 	display: flex;
 	justify-content: center;
@@ -8,40 +10,98 @@
 
 }
 
+
+
 .row div{
 	
 	width: 50vw;
 	height: 40vw;
 	/*margin: 20px;*/
 	border: 1px solid black;
-	transition: opacity .1s;
+	transition: opacity .3s;
 }
 
-.row div:hover{
-	opacity: .9;
+.bg:hover div{
+	opacity: .05;
 	transition: opacity .1s
 }
 
-#nav-top{
-	height: 10vh;
-	width: 100%;
-	background-color: white;
-	
-	
+
+/*#nav-top h1{
+	font-size: 1.5em;
+}*/
+
+
+
+
+
+.bg div{
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
+#mega div{
+	background-image: url("../img/mega/hero.png");
+	background-size: 110%;
+}
+
+/*.work div:hover{
+	opacity: .05;
+}
+*/
+#posters div{
+	background-image: url("../img/posters/poster.png");
+	background-size: contain;
+	background-color: black;
+}
+
+#mckenna div{
+	background-image: url("../img/mckenna/hero.png");
+	background-size: 105%;
+}
+
+#liminal div{
+	background-image: url("../img/liminal/hero.png");
+	background-size: 105%;
+}
+
+#elytra div{
+	background-image: url("../img/elytra/hero.png");
+	background-size: 105%;
+}
+
+#motion div{
+	background-image: url("../img/motion/hero.png");
+	background-size: 120%;
+}
+
+
+
 .headline{
-	width: 8em;
+	width: 10em;
 	line-height: 1.3em;
 	/*font-family:*/ 
-	font-size: 1.6em;
-	color:#d7dfed;
+	font-size: 3.5em;
+	color:white;
     display: none;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+ #posters .headline{
+	color: white;
 }
 
 .reveal{
+	position: absolute;
 	display: block;
+	text-align: center;
+	margin: 0 auto;
+	size: 1rem;
 }
 
 .work{
@@ -58,12 +118,12 @@
 }
 
 .one{
-	background-color: red;
+	background-color: black;
 	margin: 12.5px 12.5px 12.5px 25px;
 }
 
 .two{
-	background-color: blue;
+	background-color: black;
 	margin: 12.5px 25px 12.5px 12.5px;
 }
 
@@ -83,7 +143,6 @@ div.one.omega{
 #footer{
  	height: 10vh;
  	position: absolute;
- 	background-color: gray;
  	width: 100%;
 }
 
@@ -98,7 +157,7 @@ div.one.omega{
 		/*height: 50vw;*/
 	}
 	.row div{
-		margin: 25px;
+		/*margin: 25px;*/
 		width: 90vw;
 		height: 65vw;
 
@@ -107,6 +166,20 @@ div.one.omega{
 	div.one.omega{
 		width: 90vw;
 	}
+
+	#liminal{
+		background-size: 100%;
+	}
+
+	.one, .two{
+		margin: 12.5px 0;
+	}
+
+	#liminal{
+		background-position: 10%;
+	}
+
+
 
 	.one, .two, .one.omega, .two.omega, .one.alpha, .two.alpha{
 		/*width: 100%;

@@ -88,27 +88,27 @@ jQuery(document).ready(function($){
 	    }
 	}*/
 
-	/*let numbers = ['one', 'two', 'three', 'four', 'five', 'six'];
+	let numbers = ['mega', 'posters', 'mckenna', 'liminal', 'elytra', 'motion'];
 for (var i = 0; i < numbers.length; i++) {
     let number = numbers[i];
     $('#' + number).mouseover(function(){
-        let nav = $('.' + number);
-        nav.addClass("hovered")
+        let nav = $(this).find(".headline");
+        nav.addClass("reveal")
         console.log("mousein")
     });
     $('#' + number).mouseout(function(){
-        let nav = $('.' + number);
-        nav.removeClass("hovered")
+        let nav = $(this).find(".headline");
+        nav.removeClass("reveal")
         console.log("mouseout")
     });
-}*/
+}
 /*
 
 $(".subclass", this).click(function(){
      $(this).find(".subclass").css("visibility","visible");
 });*/
 
-var title = $(".work");
+/*var title = $(".work");
 var head = $(".headline")
 $(title, this).mouseover(function(){
 	$(this).find(head).addClass('reveal');
@@ -118,7 +118,7 @@ $(title, this).mouseout(function(){
 	console.log('this worked');
 	})
 	
-})
+})*/
 
 
 

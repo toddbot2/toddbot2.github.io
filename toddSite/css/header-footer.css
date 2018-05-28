@@ -1,0 +1,15 @@
+#nav-top, #footer{
+	height: 10vh;
+	width: 100%;
+	background-color: white;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	font-size: 1em;
+	padding: 15px;
+	line-height: 150%;
+
+}
