@@ -22,8 +22,8 @@
 }
 
 .bg:hover div{
-	opacity: .05;
-	transition: opacity .1s
+	opacity: .2;
+	transition: opacity .5s
 }
 
 
@@ -45,10 +45,7 @@
 	background-size: 110%;
 }
 
-/*.work div:hover{
-	opacity: .05;
-}
-*/
+
 #posters div{
 	background-image: url("../img/posters/poster.png");
 	background-size: contain;
@@ -87,9 +84,6 @@
     font-family: 'Montserrat', sans-serif; 
     justify-content: center;
     align-items: center;
-    
-
-    
 }
 
  #posters .headline{
@@ -111,6 +105,9 @@
 	overflow: hidden;
 }
 
+.work img{
+	object-fit: cover;
+}
 .picture{
 	width: 160%;
 	height:auto;
