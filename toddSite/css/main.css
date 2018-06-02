@@ -98,20 +98,32 @@
 	size: 1rem;
 }
 
-.work{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
 
-.work img{
-	object-fit: cover;
-}
 .picture{
 	width: 160%;
 	height:auto;
 	transform: rotate(90deg);
+}
+
+.col-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%
+}
+
+.col-2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+}
+
+.col-3{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 30%;
 }
 
 .one{

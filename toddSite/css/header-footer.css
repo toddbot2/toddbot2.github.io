@@ -1,3 +1,7 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 #nav-top, #footer{
 	height: 10vh;
 	width: 100%;
@@ -12,4 +16,36 @@
 	padding: 15px;
 	line-height: 150%;
 
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 100;
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.description{
+  padding: 2% 0;
+  max-width: 50vw;
+  line-height: 1.4em;
+}
+
+.info{
+  line-height: 2em;
+}
+
+.info span{
+  font-weight: 700;
+}
+
+#project-details{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 
+  max-width:80%;
 }
