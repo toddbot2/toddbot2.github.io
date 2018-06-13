@@ -254,6 +254,7 @@ main p {
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  margin-top:7%;
   padding: 40px 5% 40px calc(5% + 80px);
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translateZ(0);
@@ -297,11 +298,18 @@ main p {
 .cd-nav h2 {
   position: relative;
   margin-bottom: 1.7em;
-  font-size: 1.3rem;
-  font-weight: 800;
+  /*font-size: 1.3rem;
+  font-weight: 800;*/
   color: #080b0f;
-  text-transform: uppercase;
+  font-family: piersSans;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    line-height: 1.8;
+    font-weight: lighter;
+    /*border-bottom: 3px solid rgba(13, 60, 92, 0.8);*/
 }
+
 .cd-nav h2::after {
   /* bottom separation line */
   content: '';
@@ -313,28 +321,29 @@ main p {
   background-color: currentColor;
 }
 .cd-nav .cd-primary-nav {
-  margin-top: 60px;
+  margin-top: 160px;
 }
 .cd-nav .cd-primary-nav li {
   margin: 1.6em 0;
 }
 .cd-nav .cd-primary-nav a {
-  font-family: "Merriweather", serif;
-  font-size: 2.4rem;
-  color: rgba(255, 255, 255, 0.3);
+  font-family: piersSans, serif;
+  font-size: 1.5rem;
+  color: #f5f3ee;
   display: inline-block;
+  text-transform: uppercase;
 }
 .cd-nav .cd-primary-nav a.selected {
-  color: #ffffff;
+  color: #fad95b;
 }
 .no-touch .cd-nav .cd-primary-nav a:hover {
-  color: #ffffff;
+  color: #fad95b;
 }
-.cd-nav .cd-contact-info {
+/*.cd-nav .cd-contact-info {
   margin-top: 80px;
 }
 .cd-nav .cd-contact-info li {
-  font-family: "Merriweather", serif;
+  font-family: 'Libre Baskerville', serif;
   margin-bottom: 1.5em;
   line-height: 1.2;
   color: rgba(255, 255, 255, 0.3);
@@ -347,7 +356,7 @@ main p {
 }
 .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
   font-size: 1.6rem;
-}
+}*/
 @media only screen and (min-width: 1170px) {
   .cd-nav .cd-navigation-wrapper {
     padding: 62px 20%;
@@ -372,7 +381,7 @@ main p {
     margin: 2em 0;
   }
   .cd-nav .cd-primary-nav a {
-    font-size: 4.4rem;
+    font-size: 2.5rem;
   }
   .cd-nav .cd-contact-info {
     margin-top: 120px;

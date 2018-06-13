@@ -41,9 +41,14 @@ body{
    /* background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#040429), color-stop(100%,#257eb7));*/
 }
 
+svg{
+	height: auto;
+	width: 60vw;
+}
+
 
 section{
-	height: 100vh;
+	height: 100vw;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -73,11 +78,13 @@ p {
 
 #quote {
 	display: flex;
-    flex-direction: column;
+    /*flex-direction: column;
     align-items: left;
-    align-self: flex-start;
-    max-width: 48em;
+    align-self: flex-start;*/
+    /*max-width: 48em;*/
     margin-left: 9vw;
+    height: 40vw;
+    flex-direction: row;
 }
 #quote p{
 	font-family: plantagenetCherokee;
@@ -86,8 +93,8 @@ p {
 	color: rgba(13, 60, 92, 0.6);
 	text-align: right;
 	font-family: 'Libre Baskerville', serif;
-	margin-left: 20vw;
-	margin-top: 1vh;
+	/*margin-left: 20vw;*/
+	margin-top: 1vw;
 }
 
 q {
@@ -126,7 +133,7 @@ font-size:2em;
 }
 
 .cta{
-	margin-top: 7vh;
+	margin-top: 7vw;
 	max-width: 30em;
 	border:none;
 	letter-spacing: .12em;
@@ -138,7 +145,7 @@ font-size:2em;
 .caption p{
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.4em;
-	max-width: 20em;
+	min-width: 15em;
 	hyphens: auto;
 }
 
@@ -233,6 +240,7 @@ button{
     text-align: center;
     font-size: .9em;*/
     max-width: 38em;
+
 }
 
 #nav{
@@ -241,13 +249,17 @@ button{
 }
 #impact{
 	justify-content: flex-start;
-	height: 116vh;
+	height: 70vw;
+}
+
+#impact h2{
+	margin-bottom: 0;
 }
 
 #logo img{
-	height: 10vh;
+	width: 12%;
 	position:fixed;
-	top: 5vh;
+	top: 1vw;
 	right:5vw;
 	color: black;
 	z-index: 10;
@@ -260,12 +272,12 @@ button{
 	transform: scale(1.1);
 }
 #logo-footer{
-	width: 20vw;
+	/*width: 65%;*/
 }
 #logo-footer img{
-	width: 15vw;
+	width: 12vw;
 	/*position:fixed;
-	top: 5vh;
+	top: 5vw;
 	right:5vw;*/
 	align-self: flex-start;
 	color: black;
@@ -279,8 +291,19 @@ button{
 	transform: scale(1.1);
 }
 .cats {
-	width: 20vw;
+	width: 65vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
 }
+
+.cats li{
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+
 
 .blend{
 	mix-blend-mode: screen;
@@ -298,8 +321,8 @@ button{
 	display: flex;
 	flex-direction:column;
 	align-items:center;
-	width: 40vw;
-	margin-top: 8vh;
+	width: 30vw;
+	margin-top: 8vw;
 
 }
 
@@ -307,6 +330,7 @@ button{
 	justify-content: flex-end;
 	text-align: left;
 	margin-left: 1vw;
+	max-width:16em;
 }
 
 #box-container img{
@@ -314,13 +338,13 @@ button{
 	/*width: 20vw;*/
 	width: 16vw;
 	height: auto;
-	padding-bottom: 3vh;
+	padding-bottom: 3vw;
 	
 }
 
 #approach{
-	height: 65vh;
-	/*height: 40vh;*/
+	height: 50vw;
+	/*height: 40vw;*/
 	/*background-color: black;*/
 	
 	/*background-image: url('../img/hands.png');
@@ -329,15 +353,15 @@ button{
 	background-position: bottom right;*/
 	justify-content: flex-start;
 	text-align: center;
-	/*height: 85vh;*/
+	/*height: 85vw;*/
 }
 
 #approach h2{
-	padding-top: 12vh;
+	padding-top: 12vw;
 }
 
 #approach p{
-	padding-top: 15vh;
+	/*padding-top: 15vw;*/
 	/*font-family: plantagenetCherokee;
 	font-size: 1.4em;*/
     max-width: 27em;
@@ -345,7 +369,7 @@ button{
 }
 
 #approach img{
-	height: 13vh; margin-top: 13vh; margin-bottom: 1vh; margin-right:3vw;
+	height: 13vw; margin-top: 13vw; margin-bottom: 1vw; margin-right:3vw;
 }
 
 #cycle {
@@ -353,7 +377,7 @@ button{
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	padding: 7vh;
+	padding: 7vw;
 }
 
 
@@ -370,8 +394,8 @@ button{
 
 #image-wrapper div{
 	width: 50vw;
-	height: 70vh;
-	margin-top: 7vh;
+	height: 70vw;
+	margin-top: 7vw;
 
 }
 
@@ -391,25 +415,31 @@ button{
 #bug{
 	position: absolute;
     left: 0;
-    top: 506vh;
+    bottom:-4370px;
     width: 40vw;
+    z-index: 5;
+
 }
 #hands {
-	position: absolute;
+	width: 100%;
+
+
+
+	/*position: absolute;
 	right: 0;
-	top: 148vh;
-    width: 75vw;
+	top: 148vw;
+    width: 75vw;*/
 }
 #wing{
 	    position: absolute;
     right: -59px;
-    top: 630vh;
-    width: 34vw;
+    top: 460vw;
+    width: 40vw;
     z-index: -2;
 }
 
 /*#process-intro {
-	height: 50vh;
+	height: 50vw;
 	background-color: #0c3b5b;
 	color: #faf9ef;
 }*/
@@ -420,11 +450,12 @@ button{
     height: auto;
 }
 #process{
+	padding-top: 80px;
 	display: flex;
-	justify-content:center;
+	justify-content:flex-start;
 	align-items:center;
 	/*background-color: #0c3b5b;*/
-	height: 151vh;
+	height: 100vw;
 	background-image: 
 		linear-gradient(rgba(13, 60, 92, 0.8), rgba(13, 60, 92, 0.8)),   url(../img/dandilion.jpg);
 	background-size: cover;
@@ -432,7 +463,7 @@ button{
 	background-position: center;
 	background-attachment: fixed;
 	/*background: linear-gradient(rgba(13,60,92,1), rgba(13,60,92,.7), rgba(13,60,92,.3), rgba(3,60,92,0));
-	height: 120vh;*/
+	height: 120vw;*/
 
 }
 
@@ -446,7 +477,7 @@ button{
 }
 
 #who{
-	/*height: 150vh;*/
+	/*height: 150vw;*/
 	/*display: flex;
 	flex-direction:column;
 	justify-content:center;*/
@@ -455,15 +486,15 @@ button{
 	background-repeat: no-repeat;
 	background-position-x: right;
 	background-position-y: bottom;*/
-	/*margin-top: vh;*/
+	/*margin-top: vw;*/
 
 }
 #we {
-	height: 130vh;
+	height: 40vw;
 }
-#we h2{
-	padding-top: 4vh;
-}
+/*#we h2{
+	padding-top: 4vw;
+}*/
 
 #team{
 	/*margin: 10%;*/
@@ -480,9 +511,9 @@ button{
 #footer{
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-evenly;*/
+	justify-content: space-evenly;
 	background-color: #0c3b5b;
-	max-height: 40vh;
+	height: 250px;
 	
 }
 
@@ -502,7 +533,9 @@ button{
 	text-transform: uppercase;
 }
 
-
+.cd-half-block li{
+	line-height: 2em;
+}
 
 
 /*==============TODD'S PASTED GARBAGE================*/
@@ -524,33 +557,33 @@ button{
 }
 
 #one{
-	top: 470vh;
+	top: 470vw;
 	right: 48vw;
 	/*left: 45vw;*/
 }
 
 #two{
-	top: 484vh;
+	top: 484vw;
 	left: 37vw;
 }
 
 #three{
-	top: 484vh;
+	top: 484vw;
 	right: 37.5vw;
 }
 
 #four{
-	top: 504vh;
+	top: 504vw;
 	left: 37vw;
 }
 
 #five{
-	top: 504vh;
+	top: 504vw;
 	right: 37.5vw;
 }
 
 #six{
-	bottom: -425vh;
+	bottom: -425vw;
 	right: 50vw;
 	left: 48vw;	
 }
@@ -558,15 +591,17 @@ button{
 .one, .two, .three, .four, .five, .six{
 	visibility: hidden;
 	opacity: 0;
+	width: 15em;
 	position: absolute;
 	transition: 0s, opacity .4s ease-in-out;
 }
 
 #text-cont{
-	position: absolute;
-	width: 10em;
-	top: 453vh;
-	left: 43vw;
+	/*position: absolute;*/	
+	margin-top: -76%;
+	margin-left: 41%;
+	/*top: 480%;*/
+	left: 44%;
 	text-align: center;
 }
 
@@ -576,17 +611,26 @@ button{
 	opacity: 1;
 	transition: opacity .4s ease-in-out;
 
-	/*top: 18vh;
+	/*top: 18vw;
 	left: 30vw;*/
 }
+
+#svg-cont{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#we{
+	height:40vw;
+}
+
+
 
 #text-cont .one{
 	width: 15em;
 }
 
-#text-cont .five{
-	left:-2vw;
-}
 
 
 /*circle.circ{
@@ -595,12 +639,83 @@ button{
 }*/
 
 .icon:hover{
-	fill:#b79922;
+	fill:#fad95b;
 	transition:.4s;
 }
 
 .title{
 	border-bottom: solid 1px #faf9ef;
 }
+
+#cards{
+	display: none;
+}
+
+
+@media (max-width: 1000px){
+	#box-container{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#impact{
+		height: 80vw;
+		padding-bottom: 10%;
+	}
+	
+	#impact img{
+		width: 30vw;
+	}
+
+	
+
+	#box-container .caption{
+		width: 100vw;
+		height: 100vw;
+	}
+
+	svg{
+		display: none;
+	}
+
+	#process{
+		height: 195vw;
+	}
+	#bug{
+		top: 602vw;
+		
+	}
+
+	.caption p{
+		max-width: 40em;
+
+	}
+
+	#hands{
+		top:135vw;
+		width: 135vw;
+	}
+
+	#wing{
+		top: 640vw;
+	}
+	#quote{
+		max-width: 49em;
+	}
+
+	#quote q{
+		font-size: 8rem;
+	}
+	#cards{
+		display: block;
+	}
+
+	.cats li{
+		font-size: .9em;
+	}
+}
+
+
+
 
 
