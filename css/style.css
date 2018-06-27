@@ -3165,6 +3165,27 @@ aside .widget_tag_cloud ul {
     margin-top: 40px;
   }
 
+  a.detail_portfolio {
+    /*height: 400px;*/
+    /*padding-top: 200px;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolio_hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   .fancybox{
+    display:none;
+  }
+
 @media (max-width:620px){
   #mt_general_banner{
     display: none;
@@ -3172,6 +3193,10 @@ aside .widget_tag_cloud ul {
 
   #mt_portfolio{
     margin-top: 30%;
+  }
+  #toddbot h1{
+    font-size: .7em;
+
   }
 }
 
