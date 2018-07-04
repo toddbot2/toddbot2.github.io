@@ -3165,6 +3165,12 @@ aside .widget_tag_cloud ul {
     margin-top: 40px;
   }
 
+  .web-link{
+    padding: 20px 0;
+  }
+
+
+
   a.detail_portfolio {
     /*height: 400px;*/
     /*padding-top: 200px;*/
@@ -3189,6 +3195,10 @@ aside .widget_tag_cloud ul {
 @media (max-width:620px){
   #mt_general_banner{
     display: none;
+  }
+
+  #mt_general_banner.show-this{
+    display: block;
   }
 
   #mt_portfolio{
