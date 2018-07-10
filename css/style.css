@@ -3169,6 +3169,13 @@ aside .widget_tag_cloud ul {
     padding: 20px 0;
   }
 
+  .web-link a, .mt_sidebar_tx a{
+    text-decoration: underline;
+  }
+
+  .all_portfolio{
+    text-align: center;
+  }
 
 
   a.detail_portfolio {
