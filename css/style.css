@@ -3146,7 +3146,7 @@ aside .widget_tag_cloud ul {
   }
 
   .first{
-    margin-top: 10%;
+    margin-top: 18%;
   }
 
   .words{
@@ -3196,6 +3196,11 @@ aside .widget_tag_cloud ul {
 
    .fancybox{
     display:none;
+  }
+
+  .desc{
+    margin-top: -90px;
+    padding-bottom: 50px;
   }
 
 @media (max-width:620px){
