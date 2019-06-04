@@ -3139,7 +3139,11 @@ aside .widget_tag_cloud ul {
 /* ================================== */
 /*          TODD SECTION              */
 /* ================================== */
-  
+  #snek{
+  	max-width: 1000px;
+  	max-height: 1000px;
+  }
+
 .backdrop{
 	height: 540px;
 	width: 540px;
