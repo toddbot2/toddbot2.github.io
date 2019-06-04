@@ -3140,6 +3140,15 @@ aside .widget_tag_cloud ul {
 /*          TODD SECTION              */
 /* ================================== */
   
+.backdrop{
+	height: 540px;
+	width: 540px;
+	background-color: 
+}
+
+#black-back{
+	background-color: black;
+}
 
   .p-top{
     padding-top: 2%;
@@ -3192,6 +3201,7 @@ aside .widget_tag_cloud ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:10px;
   }
 
    .fancybox{
